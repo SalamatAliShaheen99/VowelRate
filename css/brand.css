@@ -1,0 +1,787 @@
+
+body{
+    background: #090452 !important;
+}
+/* Custom Variables for Upcoming Brands Page */
+:root {
+    --bg-dark-blue: #0a1128;
+    --upcoming-cyan: #00e5ff;
+    --upcoming-purple: #b388ff;
+    --border-launchpad: rgba(255, 255, 255, 0.05);
+    --text-slate-muted: #94a3b8;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image ko stretch hone se bachayega aur cut karke fit karega */
+  object-position: center; /* Image ka center hissa hamesha beech mein dikhega */
+  display: block;
+}
+
+.upcoming-brands-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.upcoming-header {
+    text-align: left;
+    margin-bottom: 50px;
+    border-left: 3px solid var(--upcoming-cyan);
+    padding-left: 20px;
+}
+
+.upcoming-neon-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--upcoming-cyan);
+    font-weight: 700;
+}
+
+.upcoming-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.upcoming-header p {
+    font-size: 14.5px;
+    color: var(--text-slate-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive 3-Column Launchpad Grid Layout */
+.upcoming-launchpad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 100% squeeze protection engine */
+    gap: 30px;
+}
+
+.launchpad-brand-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-launchpad);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.launchpad-brand-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Individual Edge Glow Borders on Hover States */
+.launchpad-brand-card.edge-glow-cyan:hover { border-color: var(--upcoming-cyan); box-shadow: 0 10px 25px rgba(0, 229, 255, 0.1); }
+.launchpad-brand-card.edge-glow-purple:hover { border-color: var(--upcoming-purple); box-shadow: 0 10px 25px rgba(179, 136, 255, 0.1); }
+
+/* Image Stage presentation container */
+.launchpad-img-stage {
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.launchpad-shoe-img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain; /* Prevents picture distortion and squishing under any width shifts */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 12px 20px rgba(0,0,0,0.4));
+}
+
+.launchpad-brand-card:hover .launchpad-shoe-img {
+    transform: scale(1.05) translateY(-4px);
+}
+
+/* Status overlay tiny sticker badge */
+.launchpad-status-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Card details typography sheets block */
+.launchpad-card-body {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.launchpad-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.launchpad-origin {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-slate-muted);
+}
+.edge-glow-cyan .launchpad-origin { color: var(--upcoming-cyan); }
+.edge-glow-purple .launchpad-origin { color: var(--upcoming-purple); }
+
+/* Prominent Price labels value */
+.launchpad-price-label {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.launchpad-card-body h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.launchpad-card-body p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-slate-muted);
+    margin: 0 0 25px 0;
+    flex: 1; /* Aligns explore button link perfectly to horizontal bottom line elements grids */
+}
+
+/* Clean minimal action linked button text button */
+.launchpad-explore-btn {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-launchpad);
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.launchpad-brand-card:hover .launchpad-explore-btn {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+.launchpad-brand-card.edge-glow-cyan:hover .launchpad-explore-btn { background: var(--upcoming-cyan); color: #000000; border-color: var(--upcoming-cyan); }
+.launchpad-brand-card.edge-glow-purple:hover .launchpad-explore-btn { background: var(--upcoming-purple); color: #000000; border-color: var(--upcoming-purple); }
+
+/* ==========================================================================
+   ANTI-COMPRESSION INTERFACE MOBILE SCREEN OVERRIDES
+   ========================================================================== */
+@media (max-width: 768px) {
+    .upcoming-launchpad-grid {
+        grid-template-columns: 1fr; /* Automatic layout reflow shifts flat down lines straight list loop */
+    }
+    .launchpad-brand-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .launchpad-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .launchpad-explore-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.brand-dna-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.dna-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.dna-neon-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--upcoming-cyan);
+    background: rgba(0, 229, 255, 0.06);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.dna-section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.dna-section-header p {
+    font-size: 15px;
+    color: var(--text-slate-muted);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Multi-Column Grid System Engine */
+.dna-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Total compression block system safe protection */
+    gap: 30px;
+}
+
+.dna-tech-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-launchpad);
+    border-radius: 12px;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    min-height: 340px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dna-tech-card:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.dna-tech-card.line-cyan:hover { border-color: var(--upcoming-cyan); box-shadow: 0 10px 20px rgba(0, 229, 255, 0.05); }
+.dna-tech-card.line-purple:hover { border-color: var(--upcoming-purple); box-shadow: 0 10px 20px rgba(179, 136, 255, 0.05); }
+
+.dna-card-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.dna-serial-code {
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--text-slate-muted);
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+
+.dna-tech-card h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+/* Large Numeric Tech Stat values */
+.dna-large-metric {
+    font-size: 38px;
+    font-weight: 900;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+.line-cyan .dna-large-metric { color: var(--upcoming-cyan); text-shadow: 0 0 10px rgba(0, 229, 255, 0.2); }
+.line-purple .dna-large-metric { color: var(--upcoming-purple); text-shadow: 0 0 10px rgba(179, 136, 255, 0.2); }
+
+.metric-unit {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 6px;
+    font-family: -apple-system, sans-serif;
+}
+
+.dna-short-bio {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-slate-muted);
+    margin: 0 0 30px 0;
+}
+
+/* Sleek Industrial Direct Linked Action button */
+.dna-action-anchor {
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.dna-tech-card.line-cyan:hover .dna-action-anchor { background: var(--upcoming-cyan); color: #000000; border-color: var(--upcoming-cyan); }
+.dna-tech-card.line-purple:hover .dna-action-anchor { background: var(--upcoming-purple); color: #000000; border-color: var(--upcoming-purple); }
+
+/* Master Squeeze-Proof Mobile Responsive System Rules Overrides */
+@media (max-width: 768px) {
+    .dna-matrix-grid {
+        grid-template-columns: 1fr; /* Turns row layout lists vertical on smartphone screens widths */
+    }
+    .dna-tech-card {
+        width: 100%;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+}
+/* Core Framework Variables for Luxury Showroom Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --luxury-gold: #d4af37; /* Elegant Champagne Gold for flagship tags */
+    --luxury-gold-glow: rgba(212, 175, 55, 0.12);
+    --border-luxury-line: rgba(255, 255, 255, 0.04);
+    --text-slate-silver: #cbd5e0;
+}
+
+.premium-luxury-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.luxury-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.luxury-gold-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--luxury-gold);
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.luxury-section-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 18px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.luxury-section-header p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive Multi-Column Array Grid layout rules */
+.luxury-showroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* Total compression guard system block */
+    gap: 35px;
+}
+
+.luxury-product-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-luxury-line);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-product-card:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.luxury-product-card.tier-gold:hover {
+    border-color: var(--luxury-gold);
+    box-shadow: 0 12px 30px var(--luxury-gold-glow);
+}
+
+/* Photo Presentation Visual Stage Container */
+.luxury-img-stage {
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.luxury-shoe-image {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain; /* Stops images from vertical and horizontal compression distortion completely */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+}
+
+.luxury-product-card:hover .luxury-shoe-image {
+    transform: scale(1.05) translateY(-5px) rotate(-1deg);
+}
+
+/* Status tiny tag overlay sticker label */
+.luxury-status-tag {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--luxury-gold);
+    padding: 4px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Informative text body sheets block configuration */
+.luxury-card-body {
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.luxury-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.luxury-brand-line {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--luxury-gold);
+    letter-spacing: 0.5px;
+}
+
+/* Prominent Numeric Price tag values values */
+.luxury-price-tag {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.luxury-card-body h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.luxury-card-body p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-slate-silver);
+    margin: 0 0 25px 0;
+    flex: 1; /* Aligns explore button link perfectly to horizontal bottom line elements grids */
+}
+
+/* Royal Golden direct Linked action button text button */
+.luxury-explore-btn {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-luxury-line);
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.luxury-product-card:hover .luxury-explore-btn {
+    background: var(--luxury-gold);
+    color: #000000;
+    border-color: var(--luxury-gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* ==========================================================================
+   ANTI-COMPRESSION RESPONSIVE SYSTEM (SQUEEZE-PROOF GUARD OVERRIDES)
+   ========================================================================= */
+@media (max-width: 900px) {
+    .luxury-showroom-grid {
+        grid-template-columns: 1fr; /* Automatic list view transformation loop straight down lines */
+    }
+    .luxury-product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .luxury-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .luxury-explore-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* Custom Variables for Always Popular Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --popular-silver: #e2e8f0; /* Crisp platinum silver for timeless profiles */
+    --popular-silver-glow: rgba(226, 232, 240, 0.08);
+    --border-classic: rgba(255, 255, 255, 0.05);
+    --text-slate-muted: #94a3b8;
+}
+
+.popular-evergreen-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.popular-main-header {
+    text-align: left;
+    margin-bottom: 50px;
+    border-left: 3px solid var(--popular-silver);
+    padding-left: 20px;
+}
+
+.popular-silver-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--popular-silver);
+    font-weight: 700;
+}
+
+.popular-main-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.popular-main-header p {
+    font-size: 14.5px;
+    color: var(--text-slate-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive 3-Column Classics Grid Layout */
+.popular-classics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Total squeeze protection system active */
+    gap: 30px;
+}
+
+.classic-product-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-classic);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.classic-product-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Silver Edge Glow Border on Hover State */
+.classic-product-card.edge-glow-silver:hover { 
+    border-color: var(--popular-silver); 
+    box-shadow: 0 10px 25px var(--popular-silver-glow); 
+}
+
+/* Image Stage presentation area container */
+.classic-img-stage {
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.classic-shoe-img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain; /* Prevents picture compression and squishing under width changes */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 12px 20px rgba(0,0,0,0.4));
+}
+
+.classic-product-card:hover .classic-shoe-img {
+    transform: scale(1.05) translateY(-4px);
+}
+
+/* Overlay status tiny tag sticker label */
+.classic-status-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Card details typography sheets block */
+.classic-card-body {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.classic-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.classic-timeline {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--popular-silver);
+    letter-spacing: 0.5px;
+}
+
+/* Prominent Price labels value value */
+.classic-price-label {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.classic-card-body h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.classic-card-body p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-slate-muted);
+    margin: 0 0 25px 0;
+    flex: 1; /* Aligns explore button link perfectly to horizontal bottom line elements grids */
+}
+
+/* Clean minimal action linked button text button */
+.classic-explore-btn {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-classic);
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.classic-product-card:hover .classic-explore-btn {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+.classic-product-card.edge-glow-silver:hover .classic-explore-btn { 
+    background: var(--popular-silver); 
+    color: #000000; 
+    border-color: var(--popular-silver); 
+}
+
+/* ==========================================================================
+   ANTI-COMPRESSION INTERFACE MOBILE SCREEN OVERRIDES
+   ========================================================================== */
+@media (max-width: 768px) {
+    .popular-classics-grid {
+        grid-template-columns: 1fr; /* Automatic layout reflow shifts flat down lines straight list loop */
+    }
+    .classic-product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .classic-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .classic-explore-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}

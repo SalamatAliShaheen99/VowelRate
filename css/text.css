@@ -1,0 +1,1405 @@
+body{
+    background: #090452 !important;
+}
+/* Custom Variables for Styling Guide Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --cream-accent: #f7f1e3; /* Soft editorial cream tone for premium magazine look */
+    --cream-glow: rgba(247, 241, 227, 0.06);
+    --border-lookbook: rgba(255, 255, 255, 0.04);
+    --text-slate-light: #cbd5e0;
+}
+
+.styling-lookbook-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.lookbook-main-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lookbook-cream-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--cream-accent);
+    background: rgba(247, 241, 227, 0.05);
+    border: 1px solid rgba(247, 241, 227, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.lookbook-main-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 18px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.lookbook-main-header p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive 3-Column Styling Grid Layout */
+.styling-formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Squeeze-proof parameter guard system */
+    gap: 30px;
+}
+
+.lookbook-formula-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-lookbook);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.lookbook-formula-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.lookbook-formula-card.highlight-trend-card {
+    border-color: rgba(247, 241, 227, 0.15);
+    background: rgba(247, 241, 227, 0.01) !important;
+}
+.lookbook-formula-card.highlight-trend-card:hover {
+    border-color: var(--cream-accent);
+    box-shadow: 0 10px 25px var(--cream-glow);
+}
+
+/* Visual Block Header Area code rules */
+.lookbook-visual-header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.silhouette-lbl {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vibe-tag {
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-slate-light);
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.gold-vibe {
+    color: #ffd700;
+    border-color: rgba(255, 215, 0, 0.2);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+/* Card details text sheets content */
+.lookbook-card-body {
+    padding: 30px 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.lookbook-card-body h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.guide-paragraph {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin: 0 0 25px 0;
+}
+
+/* Tonal Outfit Combination Formula Matrix Box */
+.outfit-matrix-box {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.matrix-line {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-slate-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    padding-bottom: 8px;
+}
+.matrix-line:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.matrix-line b {
+    color: #ffffff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin-right: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.highlight-trend-card .matrix-line b {
+    color: var(--cream-accent);
+}
+
+/* ==========================================================================
+   ANTI-COMPRESSION INTERFACE MOBILE CODE RESPONSIVE OVERRIDES
+   ========================================================================== */
+@media (max-width: 820px) {
+    .styling-formula-grid {
+        grid-template-columns: 1fr; /* Automatic layout reflow shifts flat down lines straight list loop */
+    }
+    .lookbook-formula-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .lookbook-visual-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 15px 20px;
+    }
+    .lookbook-card-body {
+        padding: 25px 20px;
+    }
+}
+.color-coordination-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.color-section-header {
+    text-align: left;
+    margin-bottom: 50px;
+    border-left: 2px solid var(--cream-accent);
+    padding-left: 20px;
+}
+
+.color-cream-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cream-accent);
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.color-section-header h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.color-section-header p {
+    font-size: 14.5px;
+    color: #94a3b8;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Horizontal Data List Pipeline */
+.color-strips-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-strip-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-lookbook);
+    border-radius: 12px;
+    padding: 25px 35px;
+    gap: 40px;
+    transition: all 0.2s ease;
+}
+
+.color-strip-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.color-strip-row.tier-white-accent:hover { border-color: #ffffff; }
+.color-strip-row.tier-black-accent:hover { border-color: #4a5568; }
+.color-strip-row.tier-brown-accent:hover { border-color: #cd853f; }
+
+.color-left-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    flex: 1;
+}
+
+/* Technical Color Patch Indicator Square Box */
+.color-patch-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.swatch-white { background: #f8fafc; }
+.swatch-black { background: #0f172a; }
+.swatch-brown { background: #451a03; }
+
+.swatch-lbl-txt {
+    font-size: 12px;
+    font-weight: 900;
+    font-family: monospace;
+}
+.swatch-white .swatch-lbl-txt { color: #0f172a; }
+.swatch-black .swatch-lbl-txt { color: #f8fafc; }
+.swatch-brown .swatch-lbl-txt { color: #fed7aa; }
+
+.color-text-details h3 {
+    font-size: 19px;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.color-text-details p {
+    font-size: 13.5px;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Right Side Outfit Color Combination Tags Loop */
+.color-outfit-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.outfit-color-pill {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-lookbook);
+    padding: 6px 14px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+.color-strip-row:hover .outfit-color-pill {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================================================================
+   ANTI-SQUEEZE TYPOGRAPHIC RESPONSIVE SYSTEM (MOBILE SAFE ENGINE)
+   ========================================================================== */
+@media (max-width: 850px) {
+    .color-strip-row {
+        flex-direction: column; /* Row splits into vertical column cards lines layout safely */
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+    
+    .color-left-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .color-outfit-tags {
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+        padding-top: 15px;
+    }
+    
+    .outfit-color-pill {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+}
+.proportions-scale-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.scale-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.scale-cream-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--cream-accent);
+    background: rgba(247, 241, 227, 0.05);
+    border: 1px solid rgba(247, 241, 227, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.scale-section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.scale-section-header p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Blueprint Twin Split Container Engine */
+.scale-blueprint-container {
+    display: flex;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.scale-blueprint-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-lookbook);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.scale-blueprint-card.highlight-blueprint {
+    border-color: rgba(247, 241, 227, 0.15);
+    background: rgba(247, 241, 227, 0.01) !important;
+}
+.scale-blueprint-card.highlight-blueprint:hover {
+    border-color: var(--cream-accent);
+    box-shadow: 0 10px 25px var(--cream-glow);
+}
+
+/* Technical Drafting Header Area */
+.blueprint-tech-header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.tech-id {
+    font-size: 11px;
+    font-family: monospace;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+.fit-status {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.fit-relaxed { background: rgba(255, 255, 255, 0.05); color: #ffffff; }
+.fit-tapered { background: rgba(247, 241, 227, 0.1); color: var(--cream-accent); }
+
+/* Card Content Details Section */
+.blueprint-body-content {
+    padding: 30px 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blueprint-body-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.blueprint-body-content p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin: 0 0 25px 0;
+}
+
+/* Inner Parameters Spec Rule List Box */
+.blueprint-rule-box {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto; /* Aligns boxes horizontally across columns perfectly */
+}
+
+.rule-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #cbd5e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    padding-bottom: 8px;
+}
+.rule-line:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.rule-line span {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.rule-line b {
+    color: #ffffff;
+    font-family: monospace;
+}
+.highlight-blueprint .rule-line b {
+    color: var(--cream-accent);
+}
+
+/* ==========================================================================
+   ANTI-COMPRESSION ARCHITECTURE (MOBILE RESPONSIVE GRID OVERRIDES)
+   ========================================================================== */
+@media (max-width: 820px) {
+    .scale-blueprint-container {
+        flex-direction: column; /* Twin splits rearrange vertical directly on smartphones widths */
+        gap: 25px;
+    }
+    
+    .scale-blueprint-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blueprint-tech-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 15px 20px;
+    }
+    .blueprint-body-content {
+        padding: 25px 20px;
+    }
+}
+/* Custom Variables for Size Guide Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --size-teal: #00e5ff; /* Sharp scientific teal for diagnostic scaling grid */
+    --size-teal-glow: rgba(0, 229, 255, 0.08);
+    --border-size-line: rgba(255, 255, 255, 0.04);
+    --text-slate-muted: #94a3b8;
+}
+
+.size-guide-matrix-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.size-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.size-teal-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--size-teal);
+    background: rgba(0, 229, 255, 0.05);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.size-section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.size-section-header p {
+    font-size: 15px;
+    color: var(--text-slate-muted);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* SECTION A: Measurement Tutorial Content Block */
+.measurement-tutorial-box {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-size-line);
+    border-radius: 12px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.tutorial-tech-header {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    text-align: left;
+}
+
+.tutorial-tech-header h4 {
+    font-size: 12px;
+    font-family: monospace;
+    color: var(--size-teal);
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.tutorial-steps-grid {
+    display: flex;
+    padding: 35px 25px;
+    gap: 30px;
+}
+
+.step-text-node {
+    flex: 1;
+    text-align: left;
+}
+
+.step-num {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: monospace;
+    color: var(--size-teal);
+    background: rgba(0, 229, 255, 0.05);
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 229, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.step-text-node h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.step-text-node p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-slate-muted);
+    margin: 0;
+}
+
+/* SECTION B: Sizing Chart Matrices Lists layout rules */
+.conversion-sheets-grid {
+    display: flex;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.conversion-data-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-size-line);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-tech-title {
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--text-slate-muted);
+    opacity: 0.5;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.conversion-data-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    text-align: left;
+}
+
+/* The Lab Data Table System Architecture */
+.matrix-spec-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-size-line);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.matrix-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    font-size: 14px;
+    color: var(--text-slate-muted);
+}
+.matrix-table-row:last-child {
+    border-bottom: none;
+}
+
+.matrix-table-row span {
+    flex: 1;
+    text-align: left;
+}
+
+.matrix-table-row.table-head-row {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom-color: var(--border-size-line);
+    font-weight: 700;
+    color: var(--size-teal);
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.matrix-table-row.highlight-row {
+    background: rgba(0, 229, 255, 0.02);
+    border-left: 2px solid var(--size-teal);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   ANTI-SQUEEZE TYPOGRAPHIC RESPONSIVE CODE (MOBILE SAFE ZONE ENGINE)
+   ========================================================================== */
+@media (max-width: 900px) {
+    /* Tutorial row transforms to individual layout vertical blocks straight lines */
+    .tutorial-steps-grid {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    /* Conversion split tables wrap straight down on narrow tablet view parameters */
+    .conversion-sheets-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .conversion-data-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .conversion-data-card {
+        padding: 20px 15px;
+    }
+    .matrix-table-row {
+        padding: 12px 10px;
+        font-size: 12.5px;
+    }
+}
+.brand-variance-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.variance-section-header {
+    text-align: left;
+    margin-bottom: 50px;
+    border-left: 2px solid var(--size-teal);
+    padding-left: 20px;
+}
+
+.variance-teal-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--size-teal);
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.variance-section-header h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.variance-section-header p {
+    font-size: 14.5px;
+    color: var(--text-slate-muted);
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Horizontal Data List Pipeline */
+.variance-strips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.variance-strip-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-size-line);
+    border-radius: 10px;
+    padding: 22px 30px;
+    gap: 40px;
+    transition: all 0.2s ease;
+}
+
+.variance-strip-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.variance-strip-row.border-narrow:hover { border-color: #ff4757; }
+.variance-strip-row.border-true:hover { border-color: var(--size-teal); }
+.variance-strip-row.border-wide:hover { border-color: #2ed573; }
+
+.variance-left-block {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-align: left;
+    flex: 1;
+}
+
+/* Technical Indicator Badge Square Box */
+.fit-type-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 900;
+}
+.type-narrow { background: rgba(255, 71, 87, 0.05); color: #ff4757; border-color: rgba(255, 71, 87, 0.15); }
+.type-true { background: rgba(0, 229, 255, 0.05); color: var(--size-teal); border-color: rgba(0, 229, 255, 0.15); }
+.type-wide { background: rgba(46, 213, 115, 0.05); color: #2ed573; border-color: rgba(46, 213, 115, 0.15); }
+
+.variance-text-details h3 {
+    font-size: 19px;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.variance-text-details p {
+    font-size: 13.5px;
+    color: var(--text-slate-muted);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Right Side Guidance Recommendations Tags */
+.variance-recommendation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rec-pill {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+.pill-warn { background: rgba(255, 71, 87, 0.1); color: #ff4757; border: 1px solid rgba(255, 71, 87, 0.2); }
+.pill-safe { background: rgba(0, 229, 255, 0.1); color: var(--size-teal); border: 1px solid rgba(0, 229, 255, 0.2); }
+.pill-info { background: rgba(46, 213, 115, 0.1); color: #2ed573; border: 1px solid rgba(46, 213, 115, 0.2); }
+
+/* ==========================================================================
+   ANTI-SQUEEZE RESPONSIVE ARCHITECTURE (MOBILE INTERFACE OVERRIDES)
+   ========================================================================== */
+@media (max-width: 800px) {
+    .variance-strip-row {
+        flex-direction: column; /* Strips layout shifts straight down vertical cleanly */
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .variance-left-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .variance-recommendation {
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+        padding-top: 15px;
+    }
+    
+    .rec-pill {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+/* Custom Variables for Care Guide Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --bronze-accent: #d35400; /* Rich leather bronze/copper for care guide profiles */
+    --bronze-glow: rgba(211, 84, 0, 0.12);
+    --border-care-line: rgba(255, 255, 255, 0.04);
+    --text-slate-muted: #94a3b8;
+}
+
+/* SECTION 1: Material Preservation System */
+.care-preservation-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.care-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.care-bronze-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--bronze-accent);
+    background: rgba(211, 84, 0, 0.05);
+    border: 1px solid rgba(211, 84, 0, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.care-section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.care-section-header p {
+    font-size: 15px;
+    color: var(--text-slate-muted);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive Asymmetric Grid Layout */
+.care-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* Total compression block guard system */
+    gap: 35px;
+}
+
+.care-material-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-care-line);
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.care-material-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.care-material-card.card-leather:hover { border-color: #f39c12; box-shadow: 0 10px 25px rgba(243, 156, 18, 0.05); }
+.care-material-card.card-suede:hover { border-color: var(--bronze-accent); box-shadow: 0 10px 25px var(--bronze-glow); }
+
+.care-card-top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.care-tech-id {
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--text-slate-muted);
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+
+.care-material-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.care-material-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-slate-muted);
+    margin: 0;
+}
+
+.care-rule-sheet {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.care-rule-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #cbd5e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    padding-bottom: 8px;
+}
+.care-rule-line:last-child { border-bottom: none; padding-bottom: 0; }
+.care-rule-line span { font-size: 12px; color: var(--text-slate-muted); }
+.care-rule-line b { color: #ffffff; font-family: monospace; }
+.card-suede .care-rule-line b { color: var(--bronze-accent); }
+.card-leather .care-rule-line b { color: #f39c12; }
+
+/* SECTION 2: Workflow Tutorial Timeline Setup */
+.care-tutorial-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.tutorial-heading-box h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--bronze-accent);
+    margin-bottom: 35px;
+    text-align: left;
+    font-family: monospace;
+}
+
+.tutorial-steps-pipeline {
+    display: flex;
+    gap: 25px;
+}
+
+.care-step-node {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-care-line);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.node-circle-num {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: monospace;
+    color: var(--bronze-accent);
+    background: rgba(211, 84, 0, 0.05);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(211, 84, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.care-step-node h4 { font-size: 18px; color: #ffffff; margin: 0 0 10px 0; font-weight: 700; }
+.care-step-node p { font-size: 13.5px; line-height: 1.5; color: var(--text-slate-muted); margin: 0; }
+
+/* SECTION 3: Lifespan Mileage Gauges Framework */
+.care-lifespan-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.lifespan-center-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lifespan-center-header h2 { font-size: 36px; font-weight: 800; color: #ffffff; margin: 15px 0 10px 0; }
+.lifespan-center-header p { font-size: 15px; color: var(--text-slate-muted); max-width: 500px; margin: 0 auto; }
+
+.lifespan-scales-wrapper { display: flex; gap: 35px; }
+.lifespan-scale-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-care-line);
+    border-radius: 16px;
+    padding: 35px;
+    text-align: left;
+}
+
+.scale-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.scale-card-head h4 { font-size: 20px; color: #ffffff; margin: 0; font-weight: 700; }
+.scale-pill { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 30px; }
+.pill-orange { background: rgba(243, 156, 18, 0.1); color: #f39c12; }
+.pill-bronze { background: rgba(211, 84, 0, 0.1); color: var(--bronze-accent); }
+
+.gauge-bar-track { margin-bottom: 25px; }
+.gauge-bar-bg { width: 100%; height: 6px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+.gauge-bar-fill { height: 100%; border-radius: 10px; }
+.gauge-bar-fill.fill-orange { background: #f39c12; box-shadow: 0 0 10px rgba(243, 156, 18, 0.3); }
+.gauge-bar-fill.fill-bronze { background: var(--bronze-accent); box-shadow: 0 0 10px var(--bronze-glow); }
+
+.gauge-labels-row { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-slate-muted); font-family: monospace; }
+.scale-card-detail { font-size: 13.5px; line-height: 1.6; color: var(--text-slate-muted); margin: 0; }
+
+/* ==========================================================================
+   ANTI-COMPRESSION INTERFACE SQUEEZE RESPONSIVE CODE (MOBILE SAFE ZONE ENGINE)
+   ========================================================================== */
+@media (max-width: 900px) {
+    /* Section 1 Multi-Column Array Grid breaks cleanly vertical */
+    .care-matrix-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Section 2 Tutorial pipeline elements stack vertically directly */
+    .tutorial-steps-pipeline {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Section 3 Mileage stats scales switch flat down */
+    .lifespan-scales-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .care-material-card, .care-step-node, .lifespan-scale-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .scale-card-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+/* Custom Variables for FAQs Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --faq-cyan: #00e5ff; /* Sharp laboratory cyan for informational trust themes */
+    --faq-cyan-glow: rgba(0, 229, 255, 0.12);
+    --border-faq-line: rgba(255, 255, 255, 0.04);
+    --text-slate-muted: #94a3b8;
+}
+
+/* SECTION 1: Core Accordion Matrix Layout */
+.faq-accordion-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.faq-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-cyan-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--faq-cyan);
+    background: rgba(0, 229, 255, 0.05);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.faq-section-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.faq-section-header p {
+    font-size: 15px;
+    color: var(--text-slate-muted);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.faq-accordion-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each static accordion rows lines block */
+}
+
+.faq-block-row {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-faq-line);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.faq-block-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: var(--faq-cyan);
+    box-shadow: 0 5px 20px var(--faq-cyan-glow);
+}
+
+.faq-question-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.faq-icon-query {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: monospace;
+    color: var(--faq-cyan);
+    background: rgba(0, 229, 255, 0.05);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 229, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.faq-question-bar h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.faq-answer-block p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-slate-muted);
+    margin: 0;
+    padding-left: 47px; /* Matches textual baseline flow exactly */
+}
+
+/* SECTION 2: Troubleshooting Support Grid Setup */
+.faq-quick-grid-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid-heading-box h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--faq-cyan);
+    margin-bottom: 35px;
+    text-align: left;
+    font-family: monospace;
+}
+
+.faq-support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); /* Total compression guard system active */
+    gap: 30px;
+}
+
+.support-data-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-faq-line);
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: left;
+}
+
+.support-card-serial {
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--faq-cyan);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.support-data-card h4 { font-size: 18px; color: #ffffff; margin: 0 0 10px 0; font-weight: 700; }
+.support-data-card p { font-size: 13.5px; line-height: 1.5; color: var(--text-slate-muted); margin: 0; }
+
+/* SECTION 3: Integrity Data Scales Framework */
+.faq-integrity-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.integrity-center-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.integrity-center-header h2 { font-size: 36px; font-weight: 800; color: #ffffff; margin: 15px 0 10px 0; }
+.integrity-center-header p { font-size: 15px; color: var(--text-slate-muted); max-width: 500px; margin: 0 auto; }
+
+.integrity-scales-wrapper { display: flex; gap: 35px; }
+.integrity-scale-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-faq-line);
+    border-radius: 16px;
+    padding: 35px;
+    text-align: left;
+}
+
+.scale-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.scale-card-head h4 { font-size: 19px; color: #ffffff; margin: 0; font-weight: 700; }
+.scale-pill { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 30px; background: rgba(0, 229, 255, 0.1); color: var(--faq-cyan); }
+
+.gauge-bar-track { margin-bottom: 25px; }
+.gauge-bar-bg { width: 100%; height: 6px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+.gauge-bar-fill { height: 100%; border-radius: 10px; background: var(--faq-cyan); box-shadow: 0 0 10px var(--faq-cyan-glow); }
+
+.gauge-labels-row { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-slate-muted); font-family: monospace; }
+.scale-card-detail { font-size: 13.5px; line-height: 1.6; color: var(--text-slate-muted); margin: 0; }
+
+/* ==========================================================================
+   ANTI-COMPRESSION INTERFACE SQUEEZE RESPONSIVE CODE (MOBILE SAFE ZONE ENGINE)
+   ========================================================================== */
+@media (max-width: 850px) {
+    /* Section 1 text padding adjusts cleanly for thin frames */
+    .faq-answer-block p {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Section 2 Multi-Column Array Grid breaks cleanly vertical */
+    .faq-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section 3 Telemetry stats scales switch flat down */
+    .integrity-scales-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .faq-block-row, .support-data-card, .integrity-scale-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-question-bar h3 { font-size: 17px; }
+    .scale-card-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

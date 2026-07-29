@@ -1,0 +1,556 @@
+/* --- ALL-TIME TRENDING SECTION --- */
+.trending-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trending-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.trending-badge {
+    background-color: #fef2f2;
+    color: #ef4444;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.trending-header h2 {
+    font-size: 36px;
+    color: #0f172a;
+    font-weight: 800;
+    margin: 15px 0 10px 0;
+}
+
+.trending-header p {
+    color: #64748b;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* --- MODERN BENTO GRID SYSTEM --- */
+.trending-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Responsive Grid Tweaks */
+@media (max-width: 968px) {
+    .trending-bento-grid {
+        grid-template-columns: 1fr; /* Mobile and Tablet par single column ho jayega */
+    }
+    .large-card {
+        grid-column: span 1 !important;
+    }
+}
+
+/* Card General Wrapper */
+.trending-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Large Card #1 settings (Takes up 2 Columns for unique look) */
+.large-card {
+    grid-column: span 2;
+    flex-direction: row; /* Horizontal style layout for main product */
+}
+
+@media (max-width: 768px) {
+    .large-card {
+        flex-direction: column;
+    }
+}
+
+/* Image Container Inside Cards */
+.trending-img-holder {
+    position: relative;
+    background: #f8fafc;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.large-card .trending-img-holder {
+    width: 50%;
+    min-height: 350px;
+}
+
+.standard-card .trending-img-holder {
+    width: 100%;
+    height: 280px;
+}
+
+.trending-img-holder img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Rank Badge Over Image */
+.rank-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Details Box Text area */
+.trending-details {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.large-card .trending-details {
+    width: 50%;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.shoe-type {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #64748b;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.live-counter {
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.trending-details h3 {
+    font-size: 22px;
+    color: #0f172a;
+    margin: 0 0 12px 0;
+    font-weight: 800;
+}
+
+.shoe-short-bio {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.trending-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Aligns price and button perfectly to bottom */
+}
+
+.trending-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0056b3;
+}
+
+/* Modern Minimalist Button */
+.trending-explore-btn {
+    text-decoration: none;
+    background: #09b125;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+/* --- INTERACTIVE HOVER ANIMATIONS --- */
+.trending-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    border-color: #cbd5e1;
+}
+
+.trending-card:hover .trending-img-holder img {
+    transform: scale(1.1) rotate(4deg); /* Beautiful trending kick rotational zoom */
+}
+
+.trending-explore-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.25);
+}
+/* --- FLASH BANNER STYLE --- */
+.trending-flash-banner {
+    position: relative;
+    background-color: #0b0f19;
+    border-radius: 24px;
+    margin: 60px 0;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+}
+
+.banner-text {
+    flex: 1;
+    z-index: 2;
+    max-width: 550px;
+}
+
+.banner-badge {
+    background: #ef4444;
+    color: white;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.banner-text h2 {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 20px 0 10px 0;
+}
+
+.banner-text p {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.banner-price-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.b-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #38bdf8;
+}
+
+.banner-btn {
+    background: #ffffff;
+    color: #0f172a;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.banner-img-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-img-box img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(-15px);
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.7));
+    transition: transform 0.5s ease;
+}
+
+.trending-flash-banner:hover .banner-img-box img {
+    transform: rotate(-5deg) scale(1.08);
+}
+
+.additional-grid {
+    margin-top: 40px;
+}
+
+/* --- ESSENTIALS MINI CARDS STYLE --- */
+.essentials-section {
+    margin: 80px 0 40px 0;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 50px;
+}
+
+.essentials-title {
+    margin-bottom: 30px;
+}
+
+.essentials-title h3 {
+    font-size: 24px;
+    color: #0f172a;
+    font-weight: 800;
+    margin: 0 0 6px 0;
+}
+
+.essentials-title p {
+    color: #64748b;
+    font-size: 15px;
+    margin: 0;
+}
+
+.essentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.essential-mini-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.essential-mini-card:hover {
+    background: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.mini-img {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.mini-img img {
+    max-height: 100%;
+    width: auto;
+}
+
+.essential-mini-card h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #334155;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.mini-price {
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   display: flex;
+    font-size: 15px;
+    font-weight: 800;
+    color: #0056b3;
+}
+/* --- CUSTOMER REVIEWS STYLE --- */
+.trending-reviews-section {
+    margin: 80px 0 40px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.review-badge {
+    background: #fdf2f8;
+    color: #db2777; /* Instagram Pink Accent */
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.reviews-header h3 {
+    font-size: 26px;
+    color: #0f172a;
+    margin: 10px 0 5px 0;
+    font-weight: 800;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.02);
+}
+
+.review-img-box {
+    position: relative;
+    height: 200px;
+    background: #f1f5f9;
+}
+
+.review-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instagram-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+}
+
+.review-text-box {
+    padding: 20px;
+}
+
+.stars {
+    color: #f59e0b; /* Gold Stars */
+    margin-bottom: 9px;
+    font-size: 14px;
+
+}
+
+.review-text-box p {
+    color: #475569;
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+    margin-bottom:20px ;
+}
+
+/* --- INTERACTIVE FAQ ACCORDION STYLE --- */
+.trending-faq-section {
+    margin: 80px 0;
+}
+
+.faq-header h3 {
+    font-size: 26px;
+    color: #0f172a;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+    background: #f8fafc;
+}
+
+.faq-icon {
+    font-size: 18px;
+    color: #0056b3;
+    transition: transform 0.2s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    background: #f8fafc;
+}
+
+.faq-answer p {
+    padding: 20px;
+    margin: 0;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Open state for JS injection */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Expands smoothly */
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg); /* Plus converts to cross */
+}
+img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}

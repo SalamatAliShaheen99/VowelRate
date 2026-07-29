@@ -1,0 +1,221 @@
+/* Core & Typography Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Minimalist Header styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #111827;
+}
+
+.logo span {
+    color: #4f46e5; /* Premium Indigo Accent */
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Section Main Heading */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.section-header h2 span {
+    color: #4f46e5;
+}
+
+.section-header p {
+    color: #6b7280;
+    margin-top: 8px;
+    font-size: 1.05rem;
+}
+
+/* Intelligent Layout Grid */
+.footwear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Dynamic Footwear Card UI */
+.footwear-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footwear-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #4f46e5;
+}
+
+/* Clean Contextual Badges */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 30px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge.premium { background-color: #111827; }
+.badge.trending { background-color: #4f46e5; }
+.badge.dynamic { background-color: #10b981; }
+
+/* Image Containers */
+.card-image {
+    height: 280px;
+    overflow: hidden;
+    background-color: #f9fafb;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footwear-card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+/* Card Content Area */
+.card-details {
+    padding: 24px;
+}
+
+.category {
+    font-size: 0.75rem;
+    color: #4f46e5;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.item-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Score and Stars System */
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.star-rating {
+    color: #f59e0b; /* Gold/Amber Stars */
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.score {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #111827;
+}
+
+.count {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.price-row {
+    margin-bottom: 18px;
+}
+
+.current-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Interaction Button */
+.action-btn {
+    width: 100%;
+    background-color: #f3f4f6;
+    color: #111827;
+    border: none;
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+a.action-btn{
+    text-decoration: none !important;  /* Ye line default underline ko khatam kar degi */
+    display: inline-block;             /* Is se padding aur spacing sahi kaam karegi */
+}
+
+.footwear-card:hover .action-btn {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+/* Class added via JavaScript on click interaction */
+.action-btn.active-click {
+    background-color: #10b981 !important;
+    color: white !important;
+}
+img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}

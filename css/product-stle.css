@@ -1,0 +1,603 @@
+
+    :root {
+        /* Premium Cyber-Dark Blue Color Palette */
+        --primary-blue: #3b82f6;
+        --neon-cyan: #06b6d4;
+        --pro-color: #10b981;    /* Emerald Green for Pros */
+        --con-color: #f43f5e;    /* Rose Red for Cons */
+        --text-main: #f8fafc;    /* Bright white/silver text for visibility */
+        --text-muted: #94a3b8;   /* Soft slate text for description */
+        --glass-border: rgba(255, 255, 255, 0.08); /* Sophisticated thin border */
+    }
+
+    /* Container integration with your Dark Blue Page */
+    .review-dynamic-container {
+        max-width: 950px;
+        margin: 60px auto 30px auto; 
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        color: var(--text-main);
+    }
+
+    /* Premium Transparent Card Architecture (Professional Glassmorphism Look) */
+    .review-card {
+        background: rgba(255, 255, 255, 0.02); 
+        backdrop-filter: blur(8px); 
+        -webkit-backdrop-filter: blur(8px);
+        padding: 35px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .review-card:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(61, 131, 246, 0.3); /* Soft blue glow border on hover */
+    }
+    
+    .section-desc { color: var(--text-muted); font-size: 0.95rem; margin-top: 15px; margin-bottom: 25px;}
+
+    /* Typography Overrides for Dark Theme */
+    h1.review-main-title { font-size: 2.6rem; color: var(--text-main); margin: 0; font-weight: 800; text-align: center; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .review-dynamic-container h2 { font-size: 1.5rem; color: var(--text-main); margin-top: 0; font-weight: 700; letter-spacing: 0.5px; }
+
+    /* Dynamic Image Container Layout */
+    .review-image-card {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .review-image-card img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+    
+    .review-image-card img:hover {
+        transform: scale(1.02);
+    }
+
+    /* 6x6 Metrics Framework with Flex-Wrap protection for Mobile */
+    .metric-group { margin-bottom: 35px; }
+    .group-title { font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 20px; border-bottom: 1px solid var(--glass-border); padding-bottom: 8px; }
+    .pro-text { color: var(--pro-color); font-weight: 700; }
+    .con-text { color: var(--con-color); font-weight: 700; }
+
+    /* Fixed Layout Wrapping to protect line colors on small screens */
+    .metric-box { 
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 18px; 
+        gap: 15px; 
+        width: 100%;
+        flex-wrap: wrap; /* Allows label & bar to cascade cleanly without breaking components */
+    }
+
+    .metric-label { 
+        width: 240px; 
+        font-weight: 500; 
+        color: var(--text-muted); 
+        flex-shrink: 0;
+    }
+
+    /* Ensures the visual colored lines always preserve their track structure */
+    .bar-container { 
+        flex-grow: 1; 
+        background: rgba(255, 255, 255, 0.07); /* Deep dark background track */
+        height: 14px; 
+        border-radius: 10px; 
+        overflow: hidden; 
+        min-width: 160px; /* Forces dynamic bars to remain wide and visual on mobile viewports */
+        position: relative;
+    }
+
+    .bar { 
+        height: 100%; 
+        width: 0%; 
+        border-radius: 10px; 
+        transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1); 
+    }
+
+    .pro-bar { background: linear-gradient(90deg, #059669, var(--pro-color)); box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
+    .con-bar { background: linear-gradient(90deg, #dc2626, var(--con-color)); box-shadow: 0 0 10px rgba(244, 63, 94, 0.4); }
+    .metric-num { width: 45px; text-align: right; font-size: 1rem; font-weight: 600; }
+
+    /* ⚔️ Responsive Comparison Grid Styling */
+    .comp-table-wrapper { width: 100%; overflow-x: auto; border-radius: 12px; border: 1px solid var(--glass-border); }
+    .comp-table { width: 100%; border-collapse: collapse; text-align: left; background: rgba(255,255,255,0.01); }
+    .comp-table th, .comp-table td { padding: 15px 20px; border-bottom: 1px solid var(--glass-border); font-size: 0.95rem; }
+    .comp-table th { background: rgba(255,255,255,0.04); color: var(--text-main); font-weight: 600; }
+    .comp-table td { color: var(--text-muted); }
+    .current-shoe-row { background: rgba(59, 130, 246, 0.08); font-weight: bold; color: var(--text-main) !important; }
+    .comp-badge { padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; }
+    .badge-win { background: rgba(16, 185, 129, 0.2); color: var(--pro-color); border: 1px solid var(--pro-color); }
+    .badge-neutral { background: rgba(255, 255, 255, 0.1); color: var(--text-main); }
+
+    /* 👟 Visual Fit Matrix / Sizing Scale */
+    .fit-scale-container { margin: 30px 0 15px 0; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 14px; border: 1px solid var(--glass-border); }
+    .fit-labels { display: flex; justify-content: space-between; font-weight: 600; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
+    .active-fit-label { color: var(--neon-cyan); }
+    .fit-track-line { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; position: relative; }
+    .fit-dot { width: 20px; height: 20px; background: var(--neon-cyan); border-radius: 50%; position: absolute; top: -6px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 12px var(--neon-cyan); transition: left 1.5s cubic-bezier(0.1, 1, 0.1, 1); }
+    .fit-notes-text { font-size: 0.95rem; font-style: italic; color: var(--text-muted); margin-top: 15px; }
+
+    /* Premium Circular Progress Settings */
+    .circle-wrapper { width: 150px; margin: 0 auto; }
+    .circular-chart { display: block; max-width: 100%; }
+    .circle-bg { fill: none; stroke: rgba(255, 255, 255, 0.07); stroke-width: 3.2; }
+    .circle { fill: none; stroke-width: 3.2; stroke-linecap: round; stroke: var(--primary-blue); transition: stroke-dasharray 1.5s cubic-bezier(0.1, 1, 0.1, 1); filter: drop-shadow(0px 0px 6px var(--primary-blue)); }
+    .percentage { fill: var(--text-main); font-size: 0.55em; text-anchor: middle; font-weight: 800; }
+
+    /* Telemetry Grid System and Micro Circles Custom Setup */
+    .telemetry-main-title { font-size: 1.8rem; color: #60a5fa; margin-bottom: 5px; text-align: center; font-weight: 800; letter-spacing: 0.5px;}
+    .telemetry-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 35px; font-size: 1rem; }
+    .telemetry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+
+    .telemetry-box {
+        background: rgba(255, 255, 255, 0.01);
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        padding: 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .telemetry-box:hover { 
+        border-color: var(--neon-cyan); 
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+    }
+    .telemetry-box h3 { font-size: 1.1rem; color: var(--text-main); margin: 15px 0 10px 0; font-weight: 600; }
+    .telemetry-box p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+    .telemetry-circle-wrapper { width: 85px; margin: 0 auto; }
+    .telemetry-chart { display: block; max-width: 100%; }
+    .t-circle-bg { fill: none; stroke: rgba(255, 255, 255, 0.07); stroke-width: 3.5; }
+    .t-circle { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke: var(--neon-cyan); transition: stroke-dasharray 1.8s cubic-bezier(0.1, 1, 0.1, 1); filter: drop-shadow(0px 0px 4px var(--neon-cyan)); }
+    .t-percentage { fill: var(--text-main); font-size: 0.5em; text-anchor: middle; font-weight: 700; }
+
+    /* Description and Unique Section Overrides */
+    .description-section p { color: var(--text-muted); line-height: 1.7; font-size: 1.05rem; }
+    .unique-match-section { background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%); border: 1px solid rgba(59, 130, 246, 0.2); }
+    .unique-match-section p { color: var(--text-muted); line-height: 1.6; }
+    .unique-notes-section { background-color: rgba(255, 255, 255, 0.01); border-left: 6px solid #475569; }
+    .notes-container { font-style: italic; color: var(--text-muted); line-height: 1.7; }
+
+    /* Responsive adjustments for narrow phone viewports */
+    @media (max-width: 480px) {
+        .review-card { padding: 22px; border-radius: 14px; }
+        h1.review-main-title { font-size: 1.9rem; }
+        .metric-label { width: 100%; margin-bottom: 5px; } 
+        .metric-num { width: auto; margin-left: auto; }
+        .telemetry-grid { grid-template-columns: 1fr; }
+    }
+    /* --- FOOT SIZE CALCULATOR STYLES --- */
+.size-calculator-section {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.03) 0%, rgba(59, 130, 246, 0.03) 100%);
+    border: 1px solid rgba(6, 182, 212, 0.2) !important;
+}
+
+.calculator-box {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.input-group input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: var(--text-main);
+    font-size: 1rem;
+    width: 120px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--neon-cyan);
+}
+
+.input-group button {
+    background: linear-gradient(90deg, var(--primary-blue), var(--neon-cyan));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.input-group button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.5);
+}
+
+.size-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    animation: fadeInSmooth 0.5s ease-out;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.result-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.standard-sizes h3 { color: var(--neon-cyan); }
+.brand-matrix h3 { color: var(--pro-color); }
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.result-row span {
+    color: var(--text-muted);
+}
+
+.result-row strong {
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+
+.error-msg {
+    color: var(--con-color);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@keyframes fadeInSmooth {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* --- NEW VISUAL GRAPHICS LAYOUT STYLES --- */
+.pressure-matrix-container { display: flex; flex-direction: column; gap: 20px; margin-top: 15px; }
+.pressure-zone-box { width: 100%; }
+.zone-header { display: flex; justify-content: space-between; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; }
+.zone-val { font-size: 1rem; font-weight: 700; }
+.zone-bar-track { width: 100%; height: 12px; background: rgba(255, 255, 255, 0.06); border-radius: 8px; overflow: hidden; }
+.zone-bar-fill { height: 100%; width: 0%; border-radius: 8px; transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1); }
+
+/* Color Indicators */
+.text-cyan { color: var(--neon-cyan); }
+.text-blue { color: var(--primary-blue); }
+.text-pro { color: var(--pro-color); }
+
+.cyan-glow-bar { background: linear-gradient(90deg, #0891b2, var(--neon-cyan)); box-shadow: 0 0 8px rgba(6, 182, 212, 0.4); }
+.blue-glow-bar { background: linear-gradient(90deg, #1d4ed8, var(--primary-blue)); box-shadow: 0 0 8px rgba(59, 130, 246, 0.4); }
+.pro-glow-bar { background: linear-gradient(90deg, #047857, var(--pro-color)); box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+.con-glow-bar { background: linear-gradient(90deg, #b91c1c, var(--con-color)); box-shadow: 0 0 8px rgba(244, 63, 94, 0.4); }
+
+/* Energy Return Grid Blocks */
+.energy-curve-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+.curve-step-card { background: rgba(255, 255, 255, 0.01); border: 1px solid var(--glass-border); padding: 25px; border-radius: 16px; position: relative; overflow: hidden; }
+.curve-index { position: absolute; top: -10px; right: -5px; font-size: 4rem; font-weight: 900; color: rgba(255, 255, 255, 0.02); line-height: 1; user-select: none; }
+.curve-step-card h3 { font-size: 1.15rem; margin-top: 0; margin-bottom: 15px; color: var(--text-main); font-weight: 600; }
+.curve-visual-node { display: flex; justify-content: space-between; background: rgba(0,0,0,0.2); padding: 10px 14px; border-radius: 8px; font-size: 0.95rem; margin-bottom: 12px; border: 1px solid rgba(255,255,255,0.02); }
+.node-label { color: var(--text-muted); }
+.node-score { font-weight: 700; }
+.curve-step-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+
+/* Terrain Radar Settings */
+.radar-blocks-grid { display: flex; flex-direction: column; gap: 18px; margin-top: 20px; }
+.radar-metric-item { display: flex; align-items: center; gap: 15px; width: 100%; flex-wrap: wrap; }
+.radar-label { width: 220px; font-weight: 500; color: var(--text-muted); flex-shrink: 0; }
+.radar-track-line { flex-grow: 1; height: 10px; background: rgba(255, 255, 255, 0.06); border-radius: 6px; overflow: hidden; min-width: 160px; position: relative; }
+.radar-fill-line { height: 100%; width: 0%; border-radius: 6px; transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1); }
+.radar-numeric-text { width: 50px; text-align: right; font-weight: 600; color: var(--text-main); font-size: 0.95rem; }
+/* --- EXTRA EXTENDED GRAPHICS LAYOUT STYLES --- */
+
+/* Foam Profile Needle Track */
+/* ================================================================= */
+/* 📉 FIXED: UNDER-FOOT FOAM COMPRESSION PROFILE SPACING INDEX        */
+/* ================================================================= */
+.foam-profile-wrapper {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--glass-border);
+    padding: 30px 25px 25px 25px; /* Added internal defensive padding layout */
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.foam-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 30px; /* Added separation padding from top text elements */
+}
+
+.foam-badge-glow {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+}
+
+/* Base spectrum structural layout tracking band */
+.stiffness-scale-track {
+    width: 100%;
+    height: 12px; /* Increased structural track height density */
+    background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981); 
+    border-radius: 6px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 35px; /* CRUCIAL: Added safety margin block to push labels down away from the track */
+}
+
+/* Fixed Floating vertical pointer needle layers */
+.foam-needle {
+    width: 4px;
+    height: 28px; /* Standardised vector bounding block specs */
+    background: #ffffff;
+    position: absolute;
+    top: -8px; /* Centers the alignment across the tracking strip perfectly */
+    left: 50%; 
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px #ffffff;
+    border-radius: 2px;
+    transition: left 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+    z-index: 3; /* Locks layer sequence explicitly over tracking backgrounds */
+}
+
+/* Zone text labels baseline positioning configuration */
+.scale-zones {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding-top: 10px; /* Forced extra padding block safety spacing check */
+    border-top: 1px solid rgba(255, 255, 255, 0.04); /* Optional structural separation frame divider line */
+}
+
+.zone-firm, .zone-balanced, .zone-plush {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text elements cascading crash loops on mobile screen viewports */
+}
+
+/* Thermal Graphics Setup */
+.thermal-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+.thermal-item { width: 100%; }
+.thermal-meta {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+.thermal-track {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.thermal-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 8px;
+    transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+/* Degradation Forecast Grid Layout Blocks */
+.degradation-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+.deg-card {
+    background: rgba(255,255,255,0.01);
+    border: 1px solid var(--glass-border);
+    padding: 22px;
+    border-radius: 16px;
+}
+.deg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.deg-card h4 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+.deg-score {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--con-color);
+}
+.deg-track-radial {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.deg-fill-line {
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+}
+.deg-card p.deg-meta {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+/* --- FLOATING PRICE TAG & AMAZON BUTTON GRAPHICS --- */
+.image-wrapper-relative {
+    position: relative;
+    width: 100%;
+}
+
+.floating-price-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(11, 19, 41, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--neon-cyan);
+    padding: 10px 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+    z-index: 5;
+}
+
+.old-price-strike {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.sale-price-glow {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--pro-color);
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+.affiliate-action-bar {
+    background: rgba(255, 255, 255, 0.01);
+    padding: 20px;
+    border-top: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: center;
+}
+
+.amazon-btn-glow {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff9900, #ffb300); /* Amazon Corporate Yellow Brand Sync */
+    color: #111111 !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 14px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 153, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.amazon-btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 153, 0, 0.5);
+}
+
+/* --- VOWELRATE AUDITING VERDICT LAYOUTS --- */
+.auditing-verdict-section {
+    background: linear-gradient(135deg, rgba(244, 63, 94, 0.02) 0%, rgba(59, 130, 246, 0.02) 100%);
+    border: 1px solid rgba(244, 63, 94, 0.15) !important;
+}
+
+.verdict-shield-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.verdict-shield-header h2 {
+    margin: 0 !important;
+    color: #f43f5e !important; /* Warning/Trust soft deep red tone focus */
+    font-weight: 800;
+}
+
+.shield-icon {
+    font-size: 1.6rem;
+}
+
+.verdict-audit-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.market-value-action {
+    margin-top: 22px;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 15px;
+}
+
+.market-link-arrow {
+    display: inline-block;
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.market-link-arrow:hover {
+    color: var(--primary-blue);
+    transform: translateX(4px);
+}
+
+@media (max-width: 480px) {
+    .floating-price-tag { top: 10px; right: 10px; padding: 6px 12px; }
+    .sale-price-glow { font-size: 1.1rem; }
+    .amazon-btn-glow { font-size: 0.95rem; padding: 12px 20px; }
+}

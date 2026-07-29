@@ -1,0 +1,817 @@
+/* Custom Variables for New Arrivals Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --arrival-orange: #ff4757;
+    --arrival-cyan: #00e5ff;
+    --border-arrival: rgba(255, 255, 255, 0.05);
+    --text-muted-slate: #94a3b8;
+}
+
+.new-arrivals-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.arrivals-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.arrivals-neon-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--arrival-cyan);
+    background: rgba(0, 229, 255, 0.08);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 800;
+    border: 1px solid rgba(0, 229, 255, 0.15);
+}
+
+.arrivals-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.arrivals-header p {
+    font-size: 15px;
+    color: var(--text-muted-slate);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Horizontal Ticket Grid Pipeline */
+.arrivals-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Stacked large ticker design layout rules */
+}
+
+/* Base Ticket Card Architecture */
+.arrival-ticket-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-arrival);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.arrival-ticket-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.arrival-ticket-card.drop-orange:hover { border-color: var(--arrival-orange); }
+.arrival-ticket-card.drop-cyan:hover { border-color: var(--arrival-cyan); }
+
+/* Left Side: Large Visual Block */
+.ticket-visual-stage {
+    flex: 1.1;
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.arrival-shoe-image {
+    max-width: 90%;
+    max-height: 220px;
+    object-fit: contain; /* Prevents picture compression crushing under any width shift */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+}
+
+.arrival-ticket-card:hover .arrival-shoe-image {
+    transform: scale(1.04) rotate(-2px);
+}
+
+/* Dynamic Live Testing Badges */
+.ticket-status-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+.ticket-status-label.pulse-live { background: #27ae60; color: #ffffff; }
+.ticket-status-label.pulse-incoming { background: #f39c12; color: #000000; }
+
+/* Right Side: Informative Text Sheet Block */
+.ticket-info-stage {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-left: 1px dashed rgba(255, 255, 255, 0.08); /* Digital ticket cut line layout style */
+}
+
+.ticket-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.release-year {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-muted-slate);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Heavy Numeric Price Sticker Value */
+.arrival-price-tag {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #ffffff;
+}
+.drop-orange .arrival-price-tag { color: var(--arrival-orange); }
+.drop-cyan .arrival-price-tag { color: var(--arrival-cyan); }
+
+.ticket-info-stage h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.ticket-info-stage p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted-slate);
+    margin: 0 0 25px 0;
+}
+
+/* Digital Action link button system */
+.ticket-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-arrival);
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.drop-orange .ticket-action-btn:hover { background: var(--arrival-orange); color: #ffffff; border-color: var(--arrival-orange); box-shadow: 0 0 15px rgba(255, 71, 87, 0.3); }
+.drop-cyan .ticket-action-btn:hover { background: var(--arrival-cyan); color: #000000; border-color: var(--arrival-cyan); box-shadow: 0 0 15px rgba(0, 229, 255, 0.3); }
+
+.ticket-action-btn svg { transition: transform 0.2s ease; }
+.ticket-action-btn:hover svg { transform: translateX(4px); }
+
+/* ==========================================================================
+   ANTI-COMPRESSION RESPONSIVE SYSTEM (SQUEEZE-PROOF GUARD OVERRIDES)
+   ========================================================================== */
+@media (max-width: 850px) {
+    .arrival-ticket-card {
+        flex-direction: column; /* Horizontal ticket splits cleanly vertical straight line layout */
+    }
+    
+    .ticket-visual-stage {
+        min-height: 220px;
+        padding: 20px;
+    }
+    
+    .ticket-info-stage {
+        padding: 30px 20px;
+        border-left: none;
+        border-top: 1px dashed rgba(255, 255, 255, 0.08); /* Rotates dashed cut line horizontally */
+    }
+
+    .ticket-info-stage h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ticket-meta-row {
+        margin-bottom: 8px;
+    }
+    .arrival-price-tag {
+        font-size: 20px;
+    }
+}
+/* Custom Variables for Fashion Page Theme */
+:root {
+    --bg-dark-blue: #0a1128;
+    --peach-accent: #ff9f43; /* Warm aesthetic peach tint for style/fashion channels */
+    --peach-glow: rgba(255, 159, 67, 0.15);
+    --border-fashion: rgba(255, 255, 255, 0.05);
+    --text-slate-light: #94a3b8;
+}
+
+.fashion-vault-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.fashion-main-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fashion-peach-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--peach-accent);
+    background: rgba(255, 159, 67, 0.06);
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.fashion-main-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 15px 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.fashion-main-header p {
+    font-size: 15px;
+    color: var(--text-slate-light);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Polaroid Lifestyle Grid Grid layout rules */
+.fashion-polaroid-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Heavy squeeze protection system */
+    gap: 30px;
+}
+
+.fashion-polaroid-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-fashion);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fashion-polaroid-card:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+.fashion-polaroid-card.dynamic-glow-border:hover {
+    border-color: var(--peach-accent);
+    box-shadow: 0 12px 25px var(--peach-glow);
+}
+
+/* Photo Canvas Frame area code rules */
+.fashion-img-frame {
+    width: 100%;
+    height: 240px;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.fashion-shoe-pic {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain; /* Photo ko structural compression or press hone se rokey ga 100% */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.fashion-polaroid-card:hover .fashion-shoe-pic {
+    transform: scale(1.05) translateY(-4px);
+}
+
+/* Minimalist Numeric Price Sticker Tag */
+.fashion-price-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: monospace;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.dynamic-glow-border .fashion-price-tag {
+    border-color: var(--peach-accent);
+    color: var(--peach-accent);
+}
+
+/* Card Body Details */
+.fashion-card-body {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.outfit-match-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--peach-accent);
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.fashion-card-body h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.fashion-card-body p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-slate-light);
+    margin: 0 0 25px 0;
+    flex: 1; /* Pushes button beautifully to bottom alignment grid line elements */
+}
+
+.fashion-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    padding-top: 15px;
+}
+
+.fashion-vibe-score {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+/* Elegant Minimal Linked Button style layout */
+.fashion-explore-anchor {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-fashion);
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.fashion-polaroid-card:hover .fashion-explore-anchor {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+.dynamic-glow-border:hover .fashion-explore-anchor {
+    background: var(--peach-accent);
+    color: #000000;
+    border-color: var(--peach-accent);
+    box-shadow: 0 0 10px var(--peach-accent);
+}
+
+/* Master Anti-Squeeze Mobile Responsive Overrides */
+@media (max-width: 768px) {
+    .fashion-polaroid-grid {
+        grid-template-columns: 1fr; /* Automatic list view reflow shifts straight down rules */
+    }
+    .fashion-polaroid-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fashion-footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .fashion-explore-anchor {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+/* Custom Variables for Trends 2026 Page */
+:root {
+    --bg-dark-blue: #0a1128;
+    --cyber-pink: #ff007f;
+    --cyber-green: #00ff66;
+    --border-cyber: rgba(255, 255, 255, 0.04);
+    --text-slate-dim: #94a3b8;
+}
+
+.trends-2026-matrix {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.trends-main-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.trends-glitch-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--cyber-green);
+    background: rgba(0, 255, 102, 0.06);
+    border: 1px solid rgba(0, 255, 102, 0.15);
+    padding: 6px 16px;
+    font-weight: 800;
+    border-radius: 2px;
+}
+
+.trends-main-header h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 18px 0 12px 0;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.trends-main-header p {
+    font-size: 15px;
+    color: var(--text-slate-dim);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Fluid Auto-Responsive 3-Column Cyber Grid layout rules */
+.cyber-trends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Total squeeze prevention safety lines */
+    gap: 30px;
+}
+
+.cyber-trend-card {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-cyber);
+    border-radius: 4px; /* Industrial sharp edges for futuristic feel */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cyber-trend-card:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Individual Neon Reactive Glows */
+.cyber-trend-card.glow-pink:hover { border-color: var(--cyber-pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.15); }
+.cyber-trend-card.glow-green:hover { border-color: var(--cyber-green); box-shadow: 0 0 20px rgba(0, 255, 102, 0.15); }
+
+/* Image Canvas Stage Area */
+.cyber-img-wrapper {
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.cyber-shoe-img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain; /* Prevents picture compression crushing completely on mobile width shifts */
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+.cyber-trend-card:hover .cyber-shoe-img {
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* Hype Indicator Sticker */
+.trend-hype-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    font-family: monospace;
+    color: #000000;
+    background: #ffffff;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+.glow-pink .trend-hype-badge { background: var(--cyber-pink); color: #ffffff; }
+.glow-green .trend-hype-badge { background: var(--cyber-green); color: #000000; }
+
+/* Content Sheet Section */
+.cyber-card-content {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.trend-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trend-tag-lbl {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: monospace;
+    color: var(--text-slate-dim);
+}
+.glow-pink .trend-tag-lbl { color: var(--cyber-pink); }
+.glow-green .trend-tag-lbl { color: var(--cyber-green); }
+
+/* Prominent Numeric Price tag values */
+.trend-price-badge {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.cyber-card-content h3 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.cyber-card-content p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-slate-dim);
+    margin: 0 0 25px 0;
+    flex: 1; /* Pushes button beautifully to bottom alignment grid line elements */
+}
+
+/* Minimalist Cyber Action link button */
+.cyber-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-cyber);
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.glow-pink .cyber-action-btn:hover { background: var(--cyber-pink); color: #ffffff; border-color: var(--cyber-pink); }
+.glow-green .cyber-action-btn:hover { background: var(--cyber-green); color: #000000; border-color: var(--cyber-green); }
+
+.cyber-arrow { transition: transform 0.2s ease; }
+.cyber-action-btn:hover .cyber-arrow { transform: translateX(5px); }
+
+/* Anti-Squeeze Mobile Responsive Overrides */
+@media (max-width: 768px) {
+    .cyber-trends-grid {
+        grid-template-columns: 1fr; /* Automatic flat list view transformation */
+    }
+    .cyber-trend-card {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trend-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .cyber-action-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.material-innovation-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.material-section-header {
+    text-align: left;
+    margin-bottom: 50px;
+    border-left: 2px solid var(--cyber-green);
+    padding-left: 20px;
+}
+
+.material-neon-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cyber-green);
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.material-section-header h2 {
+    font-size: 34px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 8px 0;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.material-section-header p {
+    font-size: 14.5px;
+    color: var(--text-slate-dim);
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Horizontal Data List Pipeline */
+.material-strips-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Rows space system code rules */
+}
+
+.material-strip-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 1px solid var(--border-cyber);
+    border-radius: 8px;
+    padding: 25px 35px;
+    gap: 40px;
+    transition: all 0.2s ease;
+}
+
+.material-strip-row:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.material-strip-row.line-pink:hover { border-color: var(--cyber-pink); box-shadow: 0 5px 15px rgba(255, 0, 127, 0.05); }
+.material-strip-row.line-green:hover { border-color: var(--cyber-green); box-shadow: 0 5px 15px rgba(0, 255, 102, 0.05); }
+
+.material-left-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    flex: 1;
+}
+
+/* Big Cyber Data Score Matrix Square Box */
+.innovation-rating-box {
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 0, 127, 0.05);
+    border: 1px solid rgba(255, 0, 127, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.innovation-rating-box.box-green {
+    background: rgba(0, 255, 102, 0.05);
+    border-color: rgba(0, 255, 102, 0.2);
+}
+
+.index-number {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: monospace;
+    color: var(--cyber-pink);
+}
+.box-green .index-number { color: var(--cyber-green); }
+
+.index-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--text-slate-dim);
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.material-title-block h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.material-title-block p {
+    font-size: 13.5px;
+    color: var(--text-slate-dim);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Sleek Industrial Direct Linked Action button */
+.material-action-btn {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.material-strip-row.line-pink:hover .material-action-btn { background: var(--cyber-pink); color: #ffffff; border-color: var(--cyber-pink); }
+.material-strip-row.line-green:hover .material-action-btn { background: var(--cyber-green); color: #000000; border-color: var(--cyber-green); }
+
+/* Master Squeeze-Proof Mobile Responsive System Rules Override */
+@media (max-width: 820px) {
+    .material-strip-row {
+        flex-direction: column; /* Strips pipeline structure changes safely into vertical column cards lines */
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+    
+    .material-left-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .material-action-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
