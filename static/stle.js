@@ -1854,12 +1854,12 @@ function loadProductReview() {
         let tableHTML = "";
         product.competitors.forEach(comp => {
             tableHTML += `
-                <tr class="${comp.isCurrent ? 'current-shoe-row' : ''}">
+                <tr class="${comp.isCurrent? 'current-shoe-row' : ''}">
                     <td>${comp.name}</td>
                     <td>${comp.cushion}</td>
                     <td>${comp.durability}</td>
                     <td>${comp.weight}</td>
-                    <td><span class="comp-badge ${comp.isCurrent ? 'badge-neutral' : 'badge-win'}">${comp.status}</span></td>
+                    <td><span class="comp-badge ${comp.isCurrent? 'badge-neutral' : 'badge-win'}">${comp.status}</span></td>
                 </tr>
             `;
         });
