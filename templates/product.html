@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style-trending.css">
+       <link rel="stylesheet" href="css/product-stle.css">
+   
+<body>
+
+     
+     <!--ider logo ki jagah ha   -->
+    <div>
+        <div class="banner">
+          <div class="vowelrate-brand-header">
+        <!-- Logo Image Wrapper -->
+        <div class="brand-logo-box">
+            <!-- logo.png ki jagah apni asli picture ka path lagayein -->
+            <img src="pic/logo.png" alt="VowelRate Logo" class="brand-image">
+        </div>
+        <!-- Brand Name Text -->
+        <h1 class="brand-title">VowelRate</h1>
+</div>
+        </div>
+    </div>
+</head>    
+
+
+    </div>
+        </div>
+     <div class="second_portion" >
+            <div class="left"> 
+              <!-- Main Professional Menu Box Container -->
+<div class="menu-box">
+    <!-- Modern Hamburger Menu Button -->
+    <div class="menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Background Dark Overlay Blur Effect -->
+    <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+
+    <!-- Navigation Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <!-- Sidebar Header with User Welcome -->
+        <div class="sidebar-header">
+            <div class="user-profile">
+                
+                
+                <span class="user-avatar"></span>
+      
+    
+    <!-- Sidebar Header Section -->
+    <div class="sidebar-header">
+        <div class="user-profile">
+            <span class="user-avatar"></span>
+          <h1> VowelRate</h1>
+          
+        
+        
+        </div>
+    </div>
+            </div>
+        </div>
+        
+    
+
+       <!-- Scrollable Navigation Items -->
+<div class="sidebar-content">
+    
+    <!-- Section 1: Trending Elements -->
+    <h3>Trending Now</h3>
+    <a href="templates/trending-shoes.html"><span class="menu-icon">🔥</span> Best Fashion </a>
+    <a href="templates/new-arrival.html"><span class="menu-icon">✨</span> New Arrivals</a>
+    <a href="templates/trendnow.html"><span class="menu-icon">⚡</span> trend 2026</a>
+    <hr>
+
+    <!-- Section 2: Footwear Categories -->
+    <h3>Shop Footwear</h3>
+    <a href="templates/sport-sneaker.html"><span class="menu-icon">👟</span> Sports & Sneakers</a>
+    <a href="templates/boed-outdoor.html"><span class="menu-icon">🥾</span> Boots & Outdoor</a>
+   <a href="templates/female.html"><span class="menu-icon">👩</span>Female</a>
+    <a href="templates/male.html"><span class="menu-icon">👨</span> Male</a>
+    <a href="templates/trending-alltime.html"><span class="menu-icon"> 🔥</span> Always popular</a>
+    
+    <hr>
+
+    <!-- Section 3: Popular Brands -->
+   <h3>Top Brands</h3>
+   <a href="templates/nike.html"><span class="menu-icon">✔️</span> Nike </a>
+    <a href="templates/adidas.html"><span class="menu-icon">📐</span> Adidas</a>
+    <a href="templates/pumaclassic.html"><span class="menu-icon">🌀</span> ASICS</a>
+   
+    <a href="templates/puma.html"><span class="menu-icon">🐆</span>Puma</a>
+    <a href="templates/newbalance.html"><span class="menu-icon">🅽</span> New Balance</a>
+    <hr>
+
+       <!-- Section 4: Help & Customer Care -->
+    <h3>Resources</h3>
+    <a href="templates/about.html"><span class="menu-icon">👤</span> About Us </a>
+    <a href="templates/support.html"><span class="menu-icon">📞</span>Contact Us</a>
+    <a href="templates/trem&condition.html"><span class="menu-icon">📜</span>Terms of Service</a>
+    <a href="templates/privacy-policy.html"><span class="menu-icon">🔒</span>Privacy Policy</a>
+    
+    </div>                                                                                                                       
+</div>
+
+   
+             <div class="overlay"></div>
+              </div>
+              <div class="header-icon">
+                     <div class="menu">
+                     
+                    <!-- Yeh Bilkul Sahi Hai -->
+                     <a href="index.html">HOME</a>
+                    <a href="templates/female.html">FEMALE</a>
+                    <a href="templates/male.html">MALE</a>
+                   
+                    <a href="templates/trendnow.html">TREND</a>
+                   
+                    <a href="templates/premium-henadmate.html">Premium brands</a>
+                    <a href="templates/new-arrival.html">New Arrival</a>
+                    <a href="templates/trending-alltime.html">Always popular</a>
+
+               </div>
+              <div class="menu1"  >
+                 <a href="index.html">HOME</a>
+                    <a href="templates/male.html">MALE</a>
+                </div>
+
+            </div>
+        </div>
+                 
+        </div>
+        
+       
+         
+       
+    </header> 
+
+
+
+
+
+
+
+
+<!-- Aapka purana content/header yahan khatam hoga -->
+
+
+    <!-- ================================================================= -->
+    <!-- COMPLETE MAIN HTML CONTAINER FOR SHOE REVIEWS                    -->
+    <!-- ================================================================= -->
+    <main class="review-dynamic-container">
+        
+
+       <!-- 1. HEADING SECTION (TOPIC) -->
+<section class="review-card intro-heading-section">
+    <h1 id="product-title" class="review-main-title">Shoe Loading...</h1>
+</section>
+
+<!-- 📸 IMAGE CONTAINER WITH FLOATING PRICE & AMAZON ACTION BUTTON -->
+<div class="review-image-card">
+    <div class="image-wrapper-relative">
+        <!-- Floating Cyber Price Tag Indicator -->
+        <div class="floating-price-tag">
+            <span id="product-original-price" class="old-price-strike">$0.00</span>
+            <span id="product-current-price" class="sale-price-glow">$0.00</span>
+        </div>
+        <img id="product-image" src="" alt="Shoe Review Image">
+    </div>
+    
+    <!-- Premium Glassmorphic Affiliate Action Frame -->
+    <div class="affiliate-action-bar">
+        <a id="amazon-buy-btn" href="templates/#" target="_blank" rel="noopener noreferrer" class="amazon-btn-glow">
+            🛒 Check Price & Availability on Amazon
+        </a>
+    </div>
+</div>
+
+<!-- (Overview, 6x6 Metrics, Sizing, and Telemetry sections go here smoothly...) -->
+
+
+        <!-- 3. TEXT SECTION (DESCRIPTION OVERVIEW) -->
+        <section class="review-card description-section">
+            <h2>Overview & Field Test</h2>
+            <p id="product-desc">Please wait while we fetch the review details...</p>
+        </section>
+
+        <!-- 4. EXPANDED 6x6 PROS AND CONS SECTION WITH TRACKING LINES -->
+        <section class="review-card pros-cons-section">
+            <h2>📊 6x6 Biomechanical Performance Analysis</h2>
+            
+            <!-- PROS (Green Indicators) -->
+            <div class="metric-group">
+                <h3 class="group-title pro-text">PROS (Strengths)</h3>
+                <div class="metric-box">
+                    <span class="metric-label">Heel Impact Cushioning:</span>
+                    <div class="bar-container"><div id="bar-comfort" class="bar pro-bar"></div></div>
+                    <span id="num-comfort" class="metric-num pro-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Upper Mesh Ventilation:</span>
+                    <div class="bar-container"><div id="bar-breath" class="bar pro-bar"></div></div>
+                    <span id="num-breath" class="metric-num pro-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Energy Return Percentage:</span>
+                    <div class="bar-container"><div id="bar-energy" class="bar pro-bar"></div></div>
+                    <span id="num-energy" class="metric-num pro-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Ankle Collar Stability:</span>
+                    <div class="bar-container"><div id="bar-ankle" class="bar pro-bar"></div></div>
+                    <span id="num-ankle" class="metric-num pro-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Forefoot Flex Groove:</span>
+                    <div class="bar-container"><div id="bar-flex" class="bar pro-bar"></div></div>
+                    <span id="num-flex" class="metric-num pro-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Lacing Lock & Fit Wrap:</span>
+                    <div class="bar-container"><div id="bar-lock" class="bar pro-bar"></div></div>
+                    <span id="num-lock" class="metric-num pro-text">0</span>
+                </div>
+            </div>
+
+            <!-- CONS (Red Indicators) -->
+            <div class="metric-group">
+                <h3 class="group-title con-text">CONS (Limitations)</h3>
+                <div class="metric-box">
+                    <span class="metric-label">Overall Chassis Weight:</span>
+                    <div class="bar-container"><div id="bar-weight" class="bar con-bar"></div></div>
+                    <span id="num-weight" class="metric-num con-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Break-in Period Required:</span>
+                    <div class="bar-container"><div id="bar-breakin" class="bar con-bar"></div></div>
+                    <span id="num-breakin" class="metric-num con-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Premium Retail Price-Markup:</span>
+                    <div class="bar-container"><div id="bar-price" class="bar con-bar"></div></div>
+                    <span id="num-price" class="metric-num con-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Wet High-Tile Slippage:</span>
+                    <div class="bar-container"><div id="bar-slip" class="bar con-bar"></div></div>
+                    <span id="num-slip" class="metric-num con-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Outsole Rubber Scuffing:</span>
+                    <div class="bar-container"><div id="bar-scuff" class="bar con-bar"></div></div>
+                    <span id="num-scuff" class="metric-num con-text">0</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-label">Mud/Dirt Retention Cavities:</span>
+                    <div class="bar-container"><div id="bar-mud" class="bar con-bar"></div></div>
+                    <span id="num-mud" class="metric-num con-text">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. VERDICT SECTION (CIRCULAR ANIMATED CHART) -->
+        <section class="review-card verdict-section">
+            <h2>🏆 Expert Verdict</h2>
+            <div class="circle-wrapper">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path id="circle-progress" class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.35" class="percentage" id="circle-text">0%</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 6. HEAD-TO-HEAD COMPETITOR COMPARISON GRID TABLE -->
+        <section class="review-card comparison-section">
+            <h2>⚔️ Competitor Cross-Comparison Index</h2>
+            <p class="section-desc">How this shoe stacks up directly against its biggest market alternatives.</p>
+            <div class="comp-table-wrapper">
+                <table class="comp-table">
+                    <thead>
+                        <tr>
+                            <th>Shoe Model</th>
+                            <th>Cushioning</th>
+                            <th>Durability</th>
+                            <th>Weight Feel</th>
+                            <th>Rank Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-rows">
+                        <!-- Dynamically populated via script rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 7. REAL-WORLD SIZING FIT MATRIX TRACKER -->
+        <section class="review-card sizing-section">
+            <h2>👟 True-To-Size & Foot Fit Dimension</h2>
+            <p class="section-desc">Skip the return shipping hassles. Our lab-measured structural fit profile:</p>
+            <div class="fit-scale-container">
+                <div class="fit-labels">
+                    <span>Run Narrow</span>
+                    <span class="active-fit-label">True To Size</span>
+                    <span>Run Wide</span>
+                </div>
+                <div class="fit-track-line">
+                    <div id="fit-indicator-dot" class="fit-dot"></div>
+                </div>
+            </div>
+            <p id="fit-verdict-text" class="fit-notes-text">Analyzing fit matrix...</p>
+        </section>
+
+        <!-- 8. VOWELRATE SPECIALIZED TELEMETRY DATA BOXES WITH MICRO-CIRCLES -->
+        <section class="review-card telemetry-section">
+            <h2 class="telemetry-main-title">🧪 Vowelrate Specialized Telemetry</h2>
+            <p class="telemetry-subtitle">Lab-tested biomechanical metrics and degradation indexing.</p>
+            
+            <div class="telemetry-grid">
+                <!-- Box 1: Fatigue Rate -->
+                <div class="telemetry-box">
+                    <div class="telemetry-circle-wrapper">
+                        <svg viewBox="0 0 36 36" class="telemetry-chart">
+                            <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path id="t-circle-1" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <text x="18" y="20.35" class="t-percentage" id="t-val-1">0%</text>
+                        </svg>
+                    </div>
+                    <h3>Beta Mileage Fatigue Rate</h3>
+                    <p>Cushion density drop and structural compression values monitored after a 200-mile testing sequence.</p>
+                </div>
+
+                <!-- Box 2: Arch Deflection -->
+                <div class="telemetry-box">
+                    <div class="telemetry-circle-wrapper">
+                        <svg viewBox="0 0 36 36" class="telemetry-chart">
+                            <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path id="t-circle-2" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+           <text x="18" y="20.35" class="t-percentage" id="t-val-2">0mm</text>
+                    </svg>
+                </div>
+                <h3>Arch Deflection Index</h3>
+                <p>Millimetric shifting under active pronation loads. Verifies pronation and flat feet support parameters.</p>
+            </div>
+
+            <!-- Box 3: Crease Limit -->
+            <div class="telemetry-box">
+                <div class="telemetry-circle-wrapper">
+                    <svg viewBox="0 0 36 36" class="telemetry-chart">
+                        <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="t-circle-3" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="t-percentage" id="t-val-3">0k</text>
+                    </svg>
+                </div>
+                <h3>Sole Crease Limit</h3>
+                <p>Pressure loop tolerance metrics before welt seams or adhesive glue matrices detect degradation.</p>
+            </div>
+
+            <!-- Box 4: Sweat Resistance -->
+            <div class="telemetry-box">
+                <div class="telemetry-circle-wrapper">
+                    <svg viewBox="0 0 36 36" class="telemetry-chart">
+                        <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="t-circle-4" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="t-percentage" id="t-val-4">0</text>
+                    </svg>
+                </div>
+                <h3>Sweat Salt Resistance</h3>
+                <p>Fabric immunity against moisture salt crystallization, odor absorption, and structural yellow staining.</p>
+            </div>
+
+            <!-- Box 5: Grip Coefficient -->
+            <div class="telemetry-box">
+                <div class="telemetry-circle-wrapper">
+                    <svg viewBox="0 0 36 36" class="telemetry-chart">
+                        <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="t-circle-5" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="t-percentage" id="t-val-5">0μ</text>
+                    </svg>
+                </div>
+                <h3>Outsole Grip Coefficient</h3>
+                <p>Slip resistance values evaluated across dry concrete surfaces and high-moisture tiled tracks parameters.</p>
+            </div>
+
+            <!-- Box 6: Resale Value -->
+            <div class="telemetry-box">
+                <div class="telemetry-circle-wrapper">
+                    <svg viewBox="0 0 36 36" class="telemetry-chart">
+                        <path class="t-circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path id="t-circle-6" class="t-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="t-percentage" id="t-val-6">0%</text>
+                    </svg>
+                </div>
+                <h3>Secondary Resale Value</h3>
+                <p>Secondary marketplace value retention margins monitored across eBay/StockX index trackers after a 6-month rotation.</p>
+            </div>
+        </div>
+    </section>
+<!-- 📊 EXCLUSIVE FEATURE: FOOT SIZE CONVERTER & BRAND MATCH MATRIX -->
+<section class="review-card size-calculator-section">
+    <h2>📏 Pro Foot Size Converter & Brand Matcher</h2>
+    <p class="section-desc">Enter your foot length in Centimeters (CM) to get exact global sizes and brand-specific fittings.</p>
+    
+    <div class="calculator-box">
+        <div class="input-group">
+            <label for="foot-cm-input">Your Foot Length (in CM):</label>
+            <input type="number" id="foot-cm-input" step="0.1" min="22" max="32" placeholder="e.g., 26.5">
+            <button id="calculate-size-btn" onclick="calculateGlobalSizes()">Match My Size</button>
+        </div>
+
+        <!-- Conversion Results Grid -->
+        <div class="size-results-grid" id="size-results-panel" style="display: none;">
+            
+            <!-- Global Standards Card -->
+            <div class="result-card standard-sizes">
+                <h3>🌍 Standard Conversions</h3>
+                <div class="result-row"><span>US Men:</span> <strong id="res-us">-</strong></div>
+                <div class="result-row"><span>UK Size:</span> <strong id="res-uk">-</strong></div>
+                <div class="result-row"><span>EU Size:</span> <strong id="res-eu">-</strong></div>
+            </div>
+
+            <!-- Brand Matrix Matching Card -->
+            <div class="result-card brand-matrix">
+                <h3>👟 Brand-Specific Fit</h3>
+                <div class="result-row"><span>Nike Match:</span> <strong id="match-nike">-</strong></div>
+                <div class="result-row"><span>Adidas Match:</span> <strong id="match-adidas">-</strong></div>
+                <div class="result-row"><span>Asics Match:</span> <strong id="match-asics">-</strong></div>
+            </div>
+            
+        </div>
+        <p id="calc-error-text" class="error-msg" style="display: none;">Please enter a valid length between 22 cm and 32 cm.</p>
+    </div>
+</section>
+
+<!-- ================================================================= -->
+<!-- ADDITIONAL PREMIUM VISUAL GRAPHIC SECTIONS                       -->
+<!-- ================================================================= -->
+
+<!-- 1. CUSHION FOAM COMPRESSION TIMELINE GRAPH (STIFFNESS VS PLUSHNESS) -->
+<section class="review-card foam-timeline-section">
+    <h2>📉 Under-Foot Foam Compression Profile</h2>
+    <p class="section-desc">Lab-measured breakdown of midsole stack structural density under active running compression impacts.</p>
+    
+    <div class="foam-profile-wrapper">
+        <div class="foam-status-header">
+            <span>Midsole Density Rating:</span>
+            <span id="txt-foam-density" class="foam-badge-glow">Analyzing Foam...</span>
+        </div>
+        
+        <div class="stiffness-scale-track">
+            <!-- Dynamic vertical indicator needle shifted by JS -->
+            <div id="foam-indicator-needle" class="foam-needle"></div>
+            <div class="scale-zones">
+                <span class="zone-firm">Ultra Firm (Racing)</span>
+                <span class="zone-balanced">Balanced Zone</span>
+                <span class="zone-plush">Max Plush (Recovery)</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 2. THERMAL VENTILATION & HEAT MAP INDEX -->
+<section class="review-card thermal-vent-section">
+    <h2>🔥 Upper-Mesh Heat Dissipation Profile</h2>
+    <p class="section-desc">Infrared thermal monitoring data showcasing upper ventilation capacity after a continuous 5KM stride loop.</p>
+    
+    <div class="thermal-grid-container">
+        <!-- Toe Box Heat Zone -->
+        <div class="thermal-item">
+            <div class="thermal-meta">
+                <span>Toe-Box Heat Escape Rate:</span>
+                <strong id="num-heat-toebox" class="text-cyan">0%</strong>
+            </div>
+            <div class="thermal-track"><div id="bar-heat-toebox" class="thermal-fill cyan-glow-bar"></div></div>
+        </div>
+
+        <!-- Midfoot Arch Heat Zone -->
+        <div class="thermal-item">
+            <div class="thermal-meta">
+                <span>Midfoot Arch Evacuation:</span>
+                <strong id="num-heat-midfoot" class="text-blue">0%</strong>
+            </div>
+            <div class="thermal-track"><div id="bar-heat-midfoot" class="thermal-fill blue-glow-bar"></div></div>
+        </div>
+
+        <!-- Heel Collar Heat Zone -->
+        <div class="thermal-item">
+            <div class="thermal-meta">
+                <span>Heel Collar Moisture Lock:</span>
+                <strong id="num-heat-heel" class="text-pro">0%</strong>
+            </div>
+            <div class="thermal-track"><div id="bar-heat-heel" class="thermal-fill pro-glow-bar"></div></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 3. WEAR-TEAR DEGRADATION BAROMETER (LAB DAMAGE SIMULATION) -->
+<section class="review-card degradation-section">
+    <h2>🛡️ Material Wear & Structural Degradation Forecast</h2>
+    <p class="section-desc">Predictive health matrix highlighting component resilience limits tested inside our machine stress simulator.</p>
+    
+    <div class="degradation-dashboard">
+        <!-- Component 1 -->
+        <div class="deg-card">
+            <div class="deg-header">
+                <h4>Outsole Lug Thinning</h4>
+                <span id="txt-deg-outsole" class="deg-score">0%</span>
+            </div>
+            <div class="deg-track-radial">
+                <div id="bar-deg-outsole" class="deg-fill-line con-glow-bar"></div>
+            </div>
+            <p class="deg-meta">Structural damage threshold forecast evaluated at 400 miles.</p>
+        </div>
+
+        <!-- Component 2 -->
+        <div class="deg-card">
+            <div class="deg-header">
+                <h4>Midsole Creep Creasing</h4>
+                <span id="txt-deg-midsole" class="deg-score">0%</span>
+            </div>
+            <div class="deg-track-radial">
+                <div id="bar-deg-midsole" class="deg-fill-line con-glow-bar"></div>
+            </div>
+            <p class="deg-meta">Foam dynamic memory cell loss tracked after 250 miles.</p>
+        </div>
+
+        <!-- Component 3 -->
+        <div class="deg-card">
+            <div class="deg-header">
+                <h4>Upper Mesh Tensile Tears</h4>
+                <span id="txt-deg-upper" class="deg-score">0%</span>
+            </div>
+            <div class="deg-track-radial">
+                <div id="bar-deg-upper" class="deg-fill-line pro-glow-bar"></div>
+            </div>
+            <p class="deg-meta">Upper fabric stitch fatigue limits under 120,000 bending flexes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================= -->
+<!-- NEW EXCLUSIVE VISUAL GRAPHICS SECTIONS (WITHOUT JS)              -->
+<!-- Paste this under your Sizing Matrix or Calculator section         -->
+<!-- ================================================================= -->
+
+<!-- 1. BIOMECHANICAL PRESSURE DISTRIBUTION MAP -->
+<section class="review-card pressure-map-section">
+    <h2>📊 Biomechanical Impact Pressure Distribution</h2>
+    <p class="section-desc">Lab-monitored load balancing across different zones of the foot during a standard stride cycle.</p>
+    
+    <div class="pressure-matrix-container">
+        <!-- Forefoot Zone -->
+        <div class="pressure-zone-box">
+            <div class="zone-header">
+                <span class="zone-title">Forefoot Landing Zone:</span>
+                <span id="num-pressure-forefoot" class="zone-val text-cyan">0% Load</span>
+            </div>
+            <div class="zone-bar-track">
+                <div id="bar-pressure-forefoot" class="zone-bar-fill cyan-glow-bar"></div>
+            </div>
+        </div>
+
+        <!-- Midfoot Zone -->
+        <div class="pressure-zone-box">
+            <div class="zone-header">
+                <span class="zone-title">Midfoot Arch Transition:</span>
+                <span id="num-pressure-midfoot" class="zone-val text-blue">0% Load</span>
+            </div>
+            <div class="zone-bar-track">
+                <div id="bar-pressure-midfoot" class="zone-bar-fill blue-glow-bar"></div>
+            </div>
+        </div>
+
+        <!-- Heel Zone -->
+        <div class="pressure-zone-box">
+            <div class="zone-header">
+                <span class="zone-title">Heel Strike Strike-Zone:</span>
+                <span id="num-pressure-heel" class="zone-val text-pro">0% Load</span>
+            </div>
+            <div class="zone-bar-track">
+                <div id="bar-pressure-heel" class="zone-bar-fill pro-glow-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 2. CUSHION ENERGY RETURN CURVE GRID -->
+<section class="review-card energy-curve-section">
+    <h2>🏃‍♂️ Foam Responsiveness & Energy Return Curve</h2>
+    <p class="section-desc">Kinetic energy retention levels tracked dynamically across the 3 critical phases of foot striking.</p>
+    
+    <div class="energy-curve-grid">
+        <!-- Phase 1 -->
+        <div class="curve-step-card">
+            <div class="curve-index">01</div>
+            <h3>Initial Contact</h3>
+            <div class="curve-visual-node">
+                <span class="node-label">Shock Absorption:</span>
+                <span id="txt-energy-initial" class="node-score text-cyan">0%</span>
+            </div>
+            <p>Measures compression rate under initial body weight velocity striking frames.</p>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="curve-step-card">
+            <div class="curve-index">02</div>
+            <h3>Mid-Stance Load</h3>
+            <div class="curve-visual-node">
+                <span class="node-label">Stabilization Retention:</span>
+                <span id="txt-energy-mid" class="node-score text-blue">0%</span>
+            </div>
+            <p>Measures foam stability index when the foot transition forces settle in full balance grids.</p>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="curve-step-card">
+            <div class="curve-index">03</div>
+            <h3>Toe-Off Spring</h3>
+            <div class="curve-visual-node">
+                <span class="node-label">Kinetic Propulsion:</span>
+                <span id="txt-energy-toe" class="node-score text-pro">0%</span>
+            </div>
+            <p>The total rebound energy velocity pushed back into stride acceleration parameters.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 3. OUTSOLE TERRAIN & ACTIVITY RADAR BLOCKS -->
+<section class="review-card terrain-radar-section">
+    <h2>🗺️ Surface Adaptation & Activity Radar Matrix</h2>
+    <p class="section-desc">Outsole rubber compound friction thresholds evaluated across different terrain structures.</p>
+    
+    <div class="radar-blocks-grid">
+        <!-- Block 1: Road -->
+        <div class="radar-metric-item">
+            <span class="radar-label">Flat Asphalt & Road:</span>
+            <div class="radar-track-line">
+                <div id="bar-radar-road" class="radar-fill-line cyan-glow-bar"></div>
+            </div>
+            <span id="num-radar-road" class="radar-numeric-text">0/10</span>
+        </div>
+
+        <!-- Block 2: Track -->
+        <div class="radar-metric-item">
+            <span class="radar-label">Synthetic Sports Track:</span>
+            <div class="radar-track-line">
+                <div id="bar-radar-track" class="radar-fill-line cyan-glow-bar"></div>
+            </div>
+            <span id="num-radar-track" class="radar-numeric-text">0/10</span>
+        </div>
+
+        <!-- Block 3: Trail -->
+        <div class="radar-metric-item">
+            <span class="radar-label">Loose Dirt & Rough Trails:</span>
+            <div class="radar-track-line">
+                <div id="bar-radar-trail" class="radar-fill-line con-glow-bar"></div>
+            </div>
+            <span id="num-radar-trail" class="radar-numeric-text">0/10</span>
+        </div>
+
+        <!-- Block 4: Indoor/Gym -->
+        <div class="radar-metric-item">
+            <span class="radar-label">Indoor Gym & Treadmill:</span>
+            <div class="radar-track-line">
+                <div id="bar-radar-gym" class="radar-fill-line pro-glow-bar"></div>
+            </div>
+            <span id="num-radar-gym" class="radar-numeric-text">0/10</span>
+        </div>
+    </div>
+</section>
+
+    <!-- EXTRA UNIQUE SECTIONS -->
+    <section class="review-card unique-match-section">
+        <h2>🎯 Activity Match & Ideal Surface</h2>
+        <p id="best-use-case">Analyzing activities...</p>
+    </section>
+
+    <section class="review-card unique-notes-section">
+        <h2>👟 30-Day Real-World Tester Log</h2>
+        <div class="notes-container">
+            <p id="tester-notes">Loading authentic lab-notes...</p>
+        </div>
+    </section>
+<section class="review-card auditing-verdict-section">
+    <div class="verdict-shield-header">
+        <span class="shield-icon">🛡️</span>
+        <h2>Vowelrate Auditing Verdict</h2>
+    </div>
+    <p class="verdict-audit-text">
+        Our operational evaluation data loops are compiled via strict biomechanical metrics guidelines. 
+        We accept zero corporate brand sponsorship cash tokens to preserve consumer evaluation safety thresholds.
+    </p>
+    <div class="market-value-action">
+        <a id="market-value-link" href="templates/#" target="_blank" rel="noopener noreferrer" class="market-link-arrow">
+            Verify Market Value &rarr;
+        </a>
+    </div>
+</section>
+</main> <!-- Complete Main Tag Closed Perfectly Here -->
+
+
+
+
+
+
+    
+   
+<!-- Amazon Style Back to Top Button -->
+<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+
+   <footer class="footer-container">
+    <div class="footer-content">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="footer-column brand-info">
+            <h2>VowelRate<span>.</span></h2>
+            <p>Global Footwear Reviews. Honest Ratings. Unbiased Analytics. Vowelrate breaks down the world's finest shoes to help global consumers buy smarter, walk comfier, and stay ahead of trends.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+    <h3>Quick Links</h3>
+    <ul>
+        <li><a href= "index.html">Home</a></li>
+        <li><a href= "trending-shoes.html">Top shoes</a></li>
+        <li><a href="templates/new-arrival.html">New Arrivals</a></li>
+        
+        <li><a href="templates/trendnow.html">Latest Trend</a></li>
+        
+        <li><a href="templates/premium-henadmate.html">Premium brands</a></li>
+    </ul>
+</div>
+
+<!-- Column 3: Customer Care -->
+<div class="footer-column">
+    <h3>Customer Care</h3>
+    <ul>
+        <li><a href="templates/support.html">Support</a></li>
+        <li><a href="templates/fitting-selection.html">Size Guide</a></li>
+        <li><a href="templates/how-to-select-best.html">Get Styling Tips </a></li>
+        <li><a href="templates/faqs.html">FAQs</a></li>
+        <li><a href="templates/about.html">About me</a></li>
+        <li><a href="templates/trem&condition.html">Trem & Condition</a></li>
+        <li><a href="templates/privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+</div>
+
+
+        <!-- Column 4: Newsletter Subscription -->
+       <div class="luxury-subs-container">
+    <div class="luxury-subs-inner">
+        <!-- Floating Neon Tech Glows -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+
+        <div class="luxury-content-box">
+            <span class="luxury-tag">VowelRate</span>
+            <h2>Step Into The Future</h2>
+            <p>Subscribe to unlock early access to rare sneaker drops, secret discount codes, and professional footwear styling guides.</p>
+        </div>
+        
+        <!-- Formspree Connection (Apni Real ID 'abcd1234' yahan dalein) -->
+        <form id="luxury-newsletter-form" action="https://formspree.io/f/mkolddwl" method="POST">
+            <div class="luxury-input-field-group">
+                <div class="luxury-icon-holder">
+                    <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <input type="email" name="email" id="luxury-email-field" placeholder="Enter your premium email address..." required>
+                <button type="submit" id="luxury-submit-button">
+                    <span>Subscribe</span>
+                    <svg xmlns="http://w3.org" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12,5 19,12 12,19"></polyline></svg>
+                </button>
+            </div>
+        </form>
+        
+        <div id="luxury-status-msg" class="luxury-status-msg"></div>
+    </div>
+</div>
+
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 VowelRate. All Rights Reserved..</p>
+    </div>
+</footer>
+
+     <script src="static/first.js"></script>
+       <script src="static/stle.js"></script>
+   
+
+      
+
+     
+</body>
+</html>
