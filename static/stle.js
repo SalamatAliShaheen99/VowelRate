@@ -206,7 +206,7 @@ const productsData = {
     }, // <-- Agar iske baad koi aur shoe nahi hai, toh comma mat lagayein
  "Nike-ACG-Pegasus-Trail": {
         title: "Nike ACG Pegasus Trail",
-        imageURL: "pic/nike acg pegasus trail (1).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342306/nike_acg_pegasus_trail_2_vvygaq.jpg", 
         desc: "Nike ACG Pegasus Trail hybrid outdoor training shoes standard model layout review. Product performance testing covers technical trail running, light hiking, and wet weather commuting. React cushioning delivers balanced shock absorption under rocky trail strike impacts. Upper mesh materials focus on water resistance and high durability value. Outsole design utilizes aggressive traction lugs for loose off-road surfaces. Midsole structures cater specifically to users prioritizing rugged stability over pure speed. Long-term tracking reveals specialized flexibility trade-offs across hard city pavements. This structural breakdown delivers verified lab metrics and real-world user feedback parameters.",
         
         oldPrice: "$155.00",
@@ -267,7 +267,7 @@ const productsData = {
     }, // <-- Agar iske baad koi aur shoe nahi hai, toh comma mat lagayein
     "New-Balance-997H": {
         title: "New Balance Men's 997H V1 Classic Sneaker",
-        imageURL: "pic/new balance 997 h.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342277/new_balance_997_h_fvnmhw.jpg", 
         desc: "New Balance 997H heritage-inspired casual lifestyle sneakers standard model layout review. Product performance testing covers daily city walking, workplace standing shifts, and casual street wear. GCEVA injection-molded cushioning delivers lightweight shock absorption under standard heel strike impacts. Upper mesh panels focus on daily casual breathability and multi-textured lifestyle aesthetics. Outsole design utilizes mixed rubber traction pads for standard concrete urban environments. Midsole structures cater specifically to users prioritizing classic retro styling over technical athletic running parameters. Long-term tracking reveals ground-contact durability trade-offs across rough multi-terrain trails.",
         
         oldPrice: "$150.00",
@@ -328,7 +328,7 @@ const productsData = {
     },
     "Puma-Speedcat-OG": {
         title: "Puma Speedcat OG",
-        imageURL: "pic/puma speedcat og.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342412/puma_speedcat_og_lqpii3.jpg", 
         desc: "Puma Speedcat OG motorsport-inspired low-profile lifestyle sneakers standard model layout review. Product performance testing covers daily street walking, precision driving sessions, and casual urban wear. Ultra-thin low-profile midsoles deliver maximum ground feel and tactile responsiveness under standard pedal operations. Upper premium suede materials focus on retro athletic styling and a sleek narrow foot silhouette. Outsole design utilizes tire-tread wrap-around rubber traction for exceptional dry surface grip matrices. Midsole structures cater specifically to users prioritizing classic motorsport heritage over thick technical running cushioning parameters. Long-term tracking reveals high-impact shock absorption trade-offs across continuous hard concrete fitness walking loops.",
         
         oldPrice: "$100.00",
@@ -451,7 +451,7 @@ const productsData = {
 
     "Nike-Air-Jordan-1-Mens-Retro-High-OG-Shattered-Backboard": {
         title: "Nike Air Jordan 1 Mens Retro High OG Shattered Backboard",
-        imageURL: "pic/Air Jordan 1 Mens Retro High OG Shattered Backboard Shoes.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342095/Air_Jordan_1_Mens_Retro_High_OG_Shattered_Backboard_Shoes_nneakw.jpg", 
         desc: "Nike Air Jordan 1 Retro High OG Shattered Backboard premium leather lifestyle sneakers standard model layout review. Product performance testing covers urban street walking, high-top ankle stability evaluations, and archival fashion culture wear. Encapsulated heel Air cushioning units deliver classic court-style shock absorption under standard heel strike impacts. Upper full-grain tumbled leather panels focus on premium tactile smoothness and iconic Starfish orange color-blocking aesthetics. Outsole design utilizes traditional concentric pivot-circle rubber traction matrices for reliable dry asphalt pavement grip. Midsole structures cater specifically to sneaker collectors prioritizing historical basketball heritage over modern lightweight athletic technical parameters. Long-term tracking reveals rigid upper leather crease trade-offs across continuous daily rotation schedules.",
         
         oldPrice: "$180.00",
@@ -512,7 +512,7 @@ const productsData = {
     },
     "ASICS-Mens-Gel-Nimbus-28-Running-Shoes": {
         title: "ASICS Men's Gel-Nimbus 28 Running Shoes",
-        imageURL: "pic/ASICS GEL-NIMBUS 28.png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342106/ASICS_GEL-NIMBUS_28_wgawca.png", 
         desc: "ASICS Men's Gel-Nimbus 28 premium high-stack neutral daily training shoes standard model layout review. Product performance testing covers long-distance base building, active road recovery kilometers, and all-day lifestyle walking comfort. Upgraded lightweight FF BLAST PLUS cushioning integrated with a rearfoot PureGEL insert delivers a highly protective, dampening, and pillow-soft underfoot landing platform. Upper reengineered engineered knit textiles focus on a luxurious step-in feel and a heavily padded, body-mapped supportive wrap. Outsole design utilizes optimized minimal Hybrid ASICSGRIP rubber matrices to strip away dead weight without sacrificing wet pavement adhesion parameters. Midsole structures featuring a pronounced forefoot rocker geometric setup cater specifically to runners prioritizing joint impact protection over aggressive springy carbon-plated velocity returns. Long-term tracking reveals lower energy feedback trade-offs across fast uptempo velocity training segments.",
         
         oldPrice: "$170.00",
@@ -573,7 +573,7 @@ const productsData = {
     },
     "ASICS-GEL-KAYANO-33": {
         title: "ASICS GEL-KAYANO 33",
-        imageURL: "pic/ASICS GEL-KAYANO 33.png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342082/ASICS_GEL-KAYANO_33_cbegd9.png", 
         desc: "ASICS GEL-KAYANO 33 premium high-performance structured stability daily training shoes standard model layout review. Product performance testing covers extended road running loops, marathon mileage conditioning, and severe overpronation biomechanical support parameters. Dual-layer midsole configurations fusing a top layer of plush FF BLAST MAX with stable FF BLAST PLUS foam deliver a exceptionally soft yet guided underfoot ride. Upper refined engineered mesh fabrics focus on year-round multi-zone breathability and secure structural adaptive lockdown fits. Outsole design utilizes upgraded Hybrid ASICSGRIP and robust AHAR+ traction matrices for excellent wet weather pavement adhesion. Midsole structures featuring next-generation FLUIDSUPPORT technology cater specifically to runners requiring gentle structural correction over intrusive traditional plastic medial post frameworks. Long-term tracking reveals notable platform weight and indoor tile squeaking trade-offs across continuous daily rotations.",
         
         oldPrice: "$170.00",
@@ -634,7 +634,7 @@ const productsData = {
     },
     "New-Balance-Mens-Fresh-Foam-Garoe-V1-Midcut": {
         title: "New Balance Men's Fresh Foam Garoé V1 Midcut",
-        imageURL: "pic/New Balance Men's Fresh Foam Garoé V1 Midcut.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342294/New_Balance_Men_s_Fresh_Foam_Garo%C3%A9_V1_Midcut_qzkgmj.jpg", 
         desc: "New Balance Fresh Foam Garoé V1 Midcut lightweight mid-top outdoor training shoes standard model layout review. Product performance testing covers technical trail running, light trekking, and mixed off-road commuting. Precision-engineered Fresh Foam midsole cushioning delivers a highly responsive, plush, and well-cushioned underfoot ride. Upper multi-textured synthetic mesh panels feature an elevated collar configuration for optimal ankle protection and stability indicators. Outsole design utilizes all-terrain AT Tread lug matrices for versatile traction performance across both on-road and rugged off-road tracks. Midsole structures cater specifically to adventurous hikers prioritizing dynamic nimble protection over rigid traditional alpine combat boot frames. Long-term tracking reveals minor performance threshold trade-offs across highly technical rocky ridges.",
         
         oldPrice: "$71.00",
@@ -696,7 +696,7 @@ const productsData = {
 
     "Karrimor-Mens-Bodmin-Mid-4-Hiking-Shoes": {
         title: "Karrimor Men's Bodmin Mid 4 Hiking Shoes",
-        imageURL: "pic/Karrimor Men's Bodmin Mid 4 Hiking Shoes.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342285/Karrimor_Men_s_Bodmin_Mid_4_Hiking_Shoes_jewedz.jpg", 
         desc: "Karrimor Men's Bodmin Mid 4 entry-level waterproof outdoor hiking boots standard model layout review. Product performance testing covers countryside trail rambling, moderate hill walking, and wet weather trekking paths. Phylon cushion inserts combine with structural FrameFlex elements to deliver reliable shock absorption under standard heel strike impacts. Upper suede and breathable textile mesh panels focus on affordable Weathertite membrane waterproofing and high ankle support aesthetics. Outsole design utilizes heavy-duty lugged DynaGrip rubber matrices for reliable multi-terrain mud and loose dirt traction. Midsole structures cater specifically to budget-conscious hikers prioritizing immediate out-of-the-box comfort over ultra-durable premium technical materials. Long-term tracking reveals component breakdown trade-offs across highly abrasive jagged alpine boulder fields.",
         
         oldPrice: "$152.00",
@@ -820,7 +820,7 @@ const productsData = {
 
     "Nike-Mens-Air-Max-97-Gs-Track-Field-Shoes": {
         title: "Nike Men's Air Max 97 (Gs) Track & Field Shoes",
-        imageURL: "pic/Nike Men's Air Max 97 (GS) Track & Field Shoes Review & Sizing Guide.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342315/Nike_Men_s_Air_Max_97_GS_Track_Field_Shoes_Review_Sizing_Guide_fdgll6.jpg", 
         desc: "Nike Men's Air Max 97 (Gs) Track & Field heritage-inspired lifestyle sneakers standard model layout review. Product performance testing covers casual urban walking, school-yard track running, and teenage athletic lifestyle routines. Full-length encapsulated Max Air cushioning grids deliver maximum underfoot shock absorption under standard heel strike impacts. Upper synthetic leather loops and wave-ripple textile panels focus on vintage Japanese bullet-train aesthetics and structural foot reinforcement. Outsole design utilizes signature solid rubber waffle traction patterns for exceptional urban track and street grip. Midsole structures cater specifically to younger athletes prioritizing iconic sportswear culture over lightweight technical marathon race engineering parameters. Long-term tracking reveals a notably rigid chassis break-in period across continuous multi-hour cross-training sessions.",
         
         oldPrice: "$166.00",
@@ -881,7 +881,7 @@ const productsData = {
     },
     "New-Balance-Mens-Coco-Delray-V2-Hard-Court-Shoes": {
         title: "New Balance Men's Coco Delray V2 Hard Court Shoes",
-        imageURL: "pic/New Balance Men's Coco Delray V2 Hard Court Shoes (2).png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342281/New_Balance_Men_s_Coco_Delray_V2_Hard_Court_Shoes_1_qfwhhh.png", 
         desc: "New Balance Coco Delray V2 versatile hard-court performance tennis shoes standard model layout review. Product performance testing covers dynamic lateral court slicing, aggressive sliding friction loops, and everyday off-court styling wear. Responsive full-length FuelCell foam cushioning integrated with an embedded torsional nylon plate delivers exceptional kinetic shock dampening. Upper lightweight engineered textile mesh panels feature structural protective film overlays to insulate against high-abrasion toe-dragging damage. Outsole design utilizes signature heavy-duty NDurance rubber compounds with an optimized hexagonal tread matrix for multi-court traction boundaries. Midsole structures featuring a lower supportive ankle collar profile cater specifically to agile players prioritizing lightning-fast cross-court coverage over rigid traditional basketball hi-top frames. Long-term tracking reveals minor forward forefoot edge creasing trade-offs across continuous abrasive hard-court matches.",
         
         oldPrice: "$95.00",
@@ -942,7 +942,7 @@ const productsData = {
     },
     "New-Balance-Womens-Fresh-Foam-X-1080-V13-Running-Shoes": {
         title: "New Balance Women's Fresh Foam X 1080 V13 Running Shoes",
-        imageURL: "pic/New Balance Women's Fresh Foam X 1080 V13 Running Shoes (2).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342288/New_Balance_Women_s_Fresh_Foam_X_1080_V13_Running_Shoes_2_cyboxa.jpg", 
         desc: "New Balance Women's Fresh Foam X 1080 V13 premium high-stack neutral daily road training shoes standard model layout review. Product performance testing covers long-distance base building, active road recovery kilometers, and all-day casual lifestyle walking comfort. Ultra-plush Fresh Foam X midsole cushioning engineered with dynamic bio-based profiles delivers an exceptionally soft, pillowy, and protective underfoot landing platform. Upper reengineered premium engineered Hypoknit fabrics focus on a luxurious step-in feel and a highly flexible, accommodating structural footprint wrap. Outsole design utilizes optimized vertical flex grooves and robust Ndurance rubber matrices to strip away dead weight without sacrificing wet pavement traction parameters. Midsole structures featuring a pronounced rocker geometric setup cater specifically to runners prioritizing maximum joint impact protection over stiff high-velocity carbon-plated propulsion returns. Long-term tracking reveals soft dynamic foam structural compression trade-offs across heavy continuous multi-month rotations.",
         
         oldPrice: "$165.00",
@@ -1005,7 +1005,7 @@ const productsData = {
 
     "New-Balance-Mens-FuelCell-Rebel-V5": {
         title: "New Balance Men's FuelCell Rebel V5",
-        imageURL: "pic/New Balance Men's FuelCell Rebel V5 (2).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342305/New_Balance_Men_s_FuelCell_Rebel_V5_5_jf4oth.jpg", 
         desc: "New Balance FuelCell Rebel V5 lightweight high-performance unplated daily road training shoes standard model layout review. Product performance testing covers progressive tempo mileage loops, spontaneous interval workouts, and high-volume daily running execution. Upgraded high-stack FuelCell midsole cushioning combining a dynamic PEBA and EVA foam blend delivers an exceptionally soft, energetic underfoot platform. Upper ultra-lightweight single-layer engineered mesh panels pair with premium FantomFit bonded overlays to focus on minimalist structural support. Outsole design utilizes a targeted distribution layout with increased forefoot rubber coverage for premium wet asphalt acceleration metrics. Midsole structures featuring wider geometric sole flares and raised sidewalls cater specifically to neutral runners prioritizing nimble plateless flexibility over stiff carbon propulsion grids. Long-term tracking reveals specialized upper mesh strain and midfoot foam abrasion trade-offs across continuous abrasive road rotations.",
         
         oldPrice: "$145.00",
@@ -1067,7 +1067,7 @@ const productsData = {
 
     "Puma-Mens-Velocity-Nitro-5-Running-Shoes": {
         title: "Puma Men's Velocity Nitro 5 Running Shoes",
-        imageURL: "pic/vilocity nitro five  (3).webp", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342316/vilocity_nitro_five_4_xenudl.webp", 
         desc: "Puma Velocity Nitro 5 premium all-purpose neutral daily road training shoes standard model layout review. Product performance testing covers frequent baseline running, daily workout building, and high-volume lifestyle concrete mileage loops. Reengineered full-length 100% aliphatic TPU NITROFOAM cushioning delivers a notably softer, resilient, and springy landing matrix. Upper updated breathable engineered mesh panels pair with a heavily padded lifestyle-oriented tongue framework for premium comfort variables. Outsole design utilizes signature heavy-coverage PUMAGRIP durable rubber compound matrices for exceptional all-surface traction thresholds. Midsole structures featuring a wider stable footprint platform and an 8mm drop geometry cater specifically to runners prioritizing versatile comfort configurations over ultra-stiff carbon racing speeds. Long-term tracking reveals lower structural weight drop dynamics alongside an expected lifespan benchmark stretching up to 800 kilometers.",
         
         oldPrice: "$140.00",
@@ -1130,7 +1130,7 @@ const productsData = {
     
     "PUMA-Mens-Deviate-Nitro-4-Running-Shoes-Road": {
         title: "PUMA Men's Deviate Nitro-4 Running Shoes Road",
-        imageURL: "pic/puma_media-hub_article_deviate-nitro-4_img-03.webp", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342315/puma_media-hub_article_deviate-nitro-4_img-06_vv38lg.webp", 
         desc: "PUMA Men's Deviate Nitro 4 high-performance plated daily road training shoes standard model layout review. Product performance testing covers high-velocity tempo loops, marathon baseline building, and daily interval asphalt strides. Upgraded dual-density NITROFOAM cushioning infused with nitrogen gas packs paired with an embedded carbon composite PWRPLATE matrix delivers elite mechanical energy returns. Upper lightweight reengineered mesh fabrics focus on high-zone summer airflow mechanics and PWRTAPE structural perimeter lockdowns. Outsole design utilizes full-traction heavy-duty PUMAGRIP rubber compound patterns for exceptional wet and dry pavement adhesion parameters. Midsole structures featuring a moderate 38mm stack geometry cater specifically to neutral runners prioritizing snappy aggressive propulsion over oversized unplated maximalist walking platforms. Long-term tracking reveals notable structural mesh fatigue thresholds across intensive high-intensity mileage block transitions.",
         
         oldPrice: "",
@@ -1192,7 +1192,7 @@ const productsData = {
 
     "ASICS-Mens-Trabuco-14-Trail-Running-Shoes": {
         title: "ASICS Men's Trabuco 14 Trail Running Shoes",
-        imageURL: "pic/ASICS-Mens-Trabuco-14-Trail-Running-Shoes (1).png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342246/ASICS-Mens-Trabuco-14-Trail-Running-Shoes_2_zub29k.jpg", 
         desc: "ASICS Men's Trabuco 14 premium high-performance adaptive trail running shoes standard model layout review. Product performance testing covers progressive singletrack racing, high-velocity mountain descents, and rugged off-road crossover training loops. Upgraded trail-tuned FF BLAST MAX midsole foam matrices strip away older rearfoot Gel elements to deliver enhanced cloud-like softness and reactive velocity returns. Upper advanced engineered jacquard mesh fabrics feature a narrower, supportive midfoot lockdown profile alongside a anatomical wide forefoot toe-splay configuration. Outsole design utilizes signature aggressive ASICSGRIP rubber compounds paired with multi-directional chevron lugs for exceptional braking thresholds. Midsole structures incorporating a flexible split forefoot rock protection plate cater specifically to trail runners prioritizing torsional agility over rigid low-profile minimalist ground-feedback constraints. Long-term tracking reveals lower technical wet mud traction boundaries across highly slippery mountain trail terrains.",
         
         oldPrice: "$145.00",
@@ -1253,7 +1253,7 @@ const productsData = {
     },
     "ASICS-Mens-Gel-Kayano-32-Running-Shoes": {
         title: "ASICS Men's Gel-Kayano 32 Running Shoes",
-        imageURL: "pic/ASICS GEL-KAYANO 32_2 (2).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342194/ASICS_GEL-KAYANO_32_2_1_oynjce.jpg", 
         desc: "ASICS Men's Gel-Kayano 32 premium max-stability daily road training shoes standard model layout review. Product performance testing covers progressive structural overpronation correction, long-distance marathon base building, and extensive concrete lifestyle walking loops. Reengineered eco-friendly FF BLAST PLUS ECO midsole cushioning integrated with a hidden rearfoot PureGEL insert delivers plush impact dampening under heavy heel strikes. Upper advanced engineered stretch mesh textiles focus on plush step-in comfort and secure structural adaptive midfoot lockdowns. Outsole design utilizes high-durability Hybrid ASICSGRIP and robust AHAR+ rubber matrices for superior multi-surface city traction. Midsole structures featuring the dynamic adaptive 4D GUIDANCE SYSTEM provide progressive non-intrusive medial arch correction over traditional archaic hard plastic posts. Long-term tracking reveals heavy platform profile traits and low hot-weather breathing dynamics across dense rotational routines.",
         
         oldPrice: "$165.00",
@@ -1314,7 +1314,7 @@ const productsData = {
     },
     "ASICS-Mens-Gel-Trabuco-13-Running-Shoes": {
         title: "ASICS Men's Gel-Trabuco 13 Running Shoes",
-        imageURL: "pic/ASICS_GEL-TRABUCO_13_M8 (2).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342297/ASICS_GEL-TRABUCO_13_M8_3_bcrqnz.jpg", 
         desc: "ASICS Men's Gel-Trabuco 13 high-performance outdoor trail running shoes standard model layout review. Product performance testing covers technical singletrack racing, steep mountain descents, and rugged multi-surface off-road training loops. Eco-friendly FF BLAST PLUS ECO midsole cushioning combined with a hidden rearfoot PureGEL insert delivers a highly protective, bouncy, and protective landing matrix. Upper debris-resistant engineered mesh fabrics feature an integrated sand guard and lace lock band to maximize secure midfoot lockdown frames. Outsole design utilizes a reengineered aggressive ASICSGRIP rubber compound with deep multidirectional chevron lugs for exceptional traction thresholds across wet mud. Midsole structures featuring a flexible embedded rock protection plate cater specifically to trail runners prioritizing rugged defense over low-profile minimalist ground-feel parameters. Long-term tracking reveals ultra-rigid heel counter structural trade-offs across continuous slow-pace recovery walking routes.",
         
         oldPrice: "$207.00",
@@ -1376,7 +1376,7 @@ const productsData = {
 
     "ASICS-Mens-Gel-Kayano-30-Running-Shoes": {
         title: "ASICS Men's Gel-Kayano 30 Running Shoes",
-        imageURL: "pic/ASICS Mens Gel Kayano 30 Running Shoes (2).png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342173/ASICS_Mens_Gel_Kayano_30_Running_Shoes_1_f7srfo.png", 
         desc: "ASICS Men's Gel-Kayano 30 premium structural stability daily road training shoes standard model layout review. Product performance testing covers long-distance base building, severe overpronation biomechanical support, and daily high-mileage road running loops. Lightweight FF BLAST PLUS ECO cushioning combined with an internal rearfoot PureGEL insert delivers an exceptionally soft, well-dampened landing zone. Upper soft engineered stretch knit fabrics focus on enhanced midfoot lockdown safety and a adaptive plush fit. Outsole design utilizes reliable durable AHAR+ traction matrices for exceptional grip across wet and dry concrete urban paths. Midsole structures featuring the innovative 4D GUIDANCE SYSTEM technology cater specifically to runners requiring adaptive stability support over traditional rigid plastic medial post frameworks. Long-term tracking reveals heavy platform profile characteristics across high-pace tempo intervals.",
         
         oldPrice: "$207.00",
@@ -1437,7 +1437,7 @@ const productsData = {
     },
     "ASICS-GEL-NIMBUS-27": {
         title: "ASICS GEL-NIMBUS 27",
-        imageURL: "pic/ASICS GEL NIMBUS 27 (3).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342148/ASICS_GEL_NIMBUS_27_4_sc98xn.jpg", 
         desc: "ASICS GEL-NIMBUS 27 premium high-stack neutral daily training shoes standard model layout review. Product performance testing covers long-distance base building, easy recovery runs, and everyday max-cushion walking routines. Upgraded high-volume FF BLAST PLUS ECO cushioning combined with an embedded rearfoot PureGEL insert delivers cloudlike dampening under heel strike impacts. Upper engineered jacquard mesh panels replace legacy knit materials to focus on enhanced summer breathability and a plush secure midfoot lockdown. Outsole design utilizes a weight-saving Hybrid ASICSGRIP configuration with minimal strategic rubber coverage zones. Midsole structures featuring a mega-max geometric chassis cater specifically to runners prioritizing absolute raw joint protection over energetic snappy racing velocity. Long-term tracking reveals bottom-heavy sluggishness trade-offs across continuous high-pace tempo intervals.",
         
         oldPrice: "$109.00",
@@ -1498,7 +1498,7 @@ const productsData = {
     },
     "ASICS-NOVABLAST-6": {
         title: "ASICS NOVABLAST 6",
-        imageURL: "pic/ASICS NOVABLAST 6 (2).png", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342208/ASICS_NOVABLAST_6_3_fn2gjs.png", 
         desc: "ASICS NOVABLAST 6 premium high-performance responsive neutral daily training shoes standard model layout review. Product performance testing covers progressive uptempo road mileage, long-distance marathon conditioning, and daily recovery running loops. Dual-density midsole configurations combining a full-length FF BLAST MAX foam core with an ultra-springy FF TURBO SQUARED forefoot trampoline pod deliver exceptional bounce. Upper premium engineered woven fabrics focus on maximized structural airflow, lightweight compliance, and adaptive security aesthetics. Outsole design utilizes a reengineered sticky ASICSGRIP rubber compound matrix for superior traction thresholds. Midsole structures featuring geometric trampoline-inspired carvings cater specifically to neutral runners prioritizing fun bouncy transitions over stiff carbon-plated track spikes. Long-term tracking reveals specialized rearfoot energy drop trade-offs across heavy heel-striking recovery paces.",
         
         oldPrice: "$155.00",
@@ -1622,7 +1622,7 @@ const productsData = {
 
     "Mens-Nike-Zoom-Vomero-5": {
         title: "Men's Nike Zoom Vomero 5",
-        imageURL: "pic/Nike Mens Nike Zoom Vomero 5 (2).jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342318/Nike_Mens_Nike_Zoom_Vomero_5_toxnio.jpg", 
         desc: "Nike Vomero 5 retro-inspired technical running and premium lifestyle sneakers standard model layout review. Product performance testing covers daily urban walking, lifestyle street wear, and extended high-intensity standing shifts. Dual-density Cushlon foam combined with Zoom Air units delivers responsive shock absorption under standard heel strike impacts. Upper multi-layered mesh panels focus on exceptional summer breathability and intricate synthetic leather design aesthetics. Outsole design utilizes reliable durable BRS 1000 carbon rubber traction matrices for premium multi-surface urban road grip. Midsole structures cater specifically to users prioritizing maximum underfoot plushness over stiff high-velocity carbon-plated propulsion parameters. Long-term tracking reveals soft dynamic foam structural compression trade-offs across heavy continuous multi-month rotations.",
         
         oldPrice: "$170.00",
@@ -1683,7 +1683,7 @@ const productsData = {
     },
     "adidas-Mens-Samba-ADV-Sneakers": {
         title: "adidas Men's Samba ADV Sneakers",
-        imageURL: "pic/adidas-Mens-Samba-ADV-Sneakers.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342099/adidas-Mens-Samba-ADV-Sneakers_etocwa.jpg", 
         desc: "adidas Men's Samba ADV performance skateboarding and low-profile lifestyle sneakers standard model layout review. Product performance testing covers technical skate park board feel, street skating degradation, and heritage terrace fashion culture wear. Internal drop-in EVA cushioning elements deliver minimalist impact shock absorption under standard heel strike impacts. Upper double-layered premium leather panels focus on upgraded Adituff T-toe suede reinforcement and structural abrasion resilience aesthetics. Outsole design utilizes heritage flexible vulcanized gum rubber cupsole matrices for exceptional multi-surface board grip. Midsole structures cater specifically to skateboarders prioritizing micro-tactile board control over thick plush technical running cushioning parameters. Long-term tracking reveals classic low-chassis rigid flat cupsole trade-offs across continuous long-distance concrete walking routes.",
         
         oldPrice: "$109.00",
@@ -1746,7 +1746,7 @@ const productsData = {
 
     "Nike-Air-Force-1-07": {
         title: "Nike Air Force 1 '07",
-        imageURL: "pic/nike air force 1'07.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785342311/nike_air_force_1_07_yv2xpt.jpg", 
         desc: "Nike Air Force 1 '07 heritage basketball-inspired lifestyle sneakers standard model layout review. Product performance testing covers daily urban walking, street lifestyle wear, and all-day casual standing shifts. Encapsulated full-length Air cushioning delivers reliable shock absorption under standard heel strike impacts. Upper thick leather materials focus on classic retro aesthetics and structured structural foot support. Outsole design utilizes heritage pivot-circle rubber traction matrices for exceptional multi-surface city grip. Midsole structures cater specifically to users prioritizing timeless streetwear culture over lightweight technical running performance parameters. Long-term tracking reveals heavy chassis weight trade-offs across continuous high-intensity athletic training routines.",
         
         oldPrice: "$150.00",
