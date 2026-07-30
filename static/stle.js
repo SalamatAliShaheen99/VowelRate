@@ -389,7 +389,7 @@ const productsData = {
     },
     "adidas-Dropset-4-Training-Sneakers-Shoes-Black": {
         title: "adidas Dropset 4 Training Sneakers Shoes - Black",
-        imageURL: "pic/Adidas Dropset 4.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785403907/Adidas_Dropset_4_kekbnx.jpg", 
         desc: "adidas Dropset 4 versatile high-performance functional strength and cross-training shoes standard model layout review. Product performance testing covers heavy barbell weightlifting, intense fitness competitions, high-impact box jumps, and short metabolic conditioning sprints. Full-length dual-density Repetitor foam cushioning paired with integrated rearfoot Energyrods delivers controlled lateral chassis stability under extreme structural compression loads. Upper engineered mesh materials featuring strategic haptic print overlays focus on enhanced breathability, upper stitch protection, and secure midfoot containment. Outsole design utilizes premium sticky Continental rubber pods on the forefoot and heel combined with dense Adiwear rubber across the midfoot wrap for rope-climb protection matrices. Midsole structures focus on weightlifting-specific parameters, catering directly to cross-functional athletes prioritizing a low-profile grounded base over thick maximalist running cushion zones. Long-term tracking reveals rigid sole characteristics over extended multi-mile urban asphalt pavement commutes.",
         
         oldPrice: "$145.00",
@@ -1560,7 +1560,7 @@ const productsData = {
 
     "Outdoor-Terrex-Agravic-Speed-Ultra-2-Trail-Running-Shoes": {
         title: "Outdoor Terrex Agravic Speed Ultra 2 Trail Running Shoes",
-        imageURL: "pic/Outdoor-Terrex-Agravic-Speed-Ultra-2-Trail-Running-Shoes.jpg", 
+        imageURL: "https://res.cloudinary.com/oxirfozc/image/upload/v1785403993/Outdoor-Terrex-Agravic-Speed-Ultra-2-Trail-Running-Shoes_w0s4xs.jpg", 
         desc: "Adidas Terrex Agravic Speed Ultra 2 high-performance outdoor trail running shoes standard model layout review. Product performance testing covers ultra-distance trail racing, high-velocity singletrack loops, and rugged off-road speed training. Ultra-responsive Lightstrike Pro dual-density foam paired with integrated Energy Rods delivers maximum energetic propulsion under aggressive forefoot strike impacts. Upper reengineered mono mesh elements focus on elite summer breathability and micro-locked structural racing security aesthetics. Outsole design utilizes upgraded deeper Continental rubber traction lugs for exceptional wet and muddy terrain grip. Midsole structures cater specifically to competitive ultra-distance racers prioritizing maximum speed and rolling rocker transitions over stiff low-profile ground-feel parameters. Long-term tracking reveals specialized lateral stability trade-offs across highly technical rocky ridges.",
         
         oldPrice: "$218.00",
