@@ -65,7 +65,7 @@ header{
 .banner {
     position: static;
     max-width: 100%; /* Fix: 1310px se hatakar 100% kiya taake screen par fit ho */
-    padding: 15px 30px;
+    padding: 5px 10px;
     display: flex; /* Inline-flex ki jagah flex kiya */
     justify-content: flex-end; 
     align-items: center;
@@ -77,7 +77,6 @@ header{
     font-style: oblique;
     margin-left: 0; /* Fix: Faltu negative margins ko hataya */
     margin-right: 0; /* Fix: Jis se right side ka gap khatam ho jayega */
-    height: 80px;
 }
 
 /* ==========================================
