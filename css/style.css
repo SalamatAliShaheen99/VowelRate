@@ -14,7 +14,7 @@ body{
 }
 .brand-image {
     width: 100px;
-    height: 100px;
+    height: 80px;
     object-fit: contain; /* Picture ko kharab ya stretch hone se rokega */
 }
 
@@ -76,6 +76,7 @@ header{
     font-style: oblique;
     margin-left: 0; /* Fix: Faltu negative margins ko hataya */
     margin-right: 0; /* Fix: Jis se right side ka gap khatam ho jayega */
+    margin-top: 100px;
 }
 
 /* ==========================================
