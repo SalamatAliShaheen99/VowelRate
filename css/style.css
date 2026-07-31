@@ -88,6 +88,19 @@ img.logos-compony {
     display: block !important;       /* Alignment ko perfect rakhne ke liye */
     margin-right: auto;              /* Logo ko left side par rakhega */
 }
+/* Purane system par zabadasti qabu panay ke liye solid fix */
+.banner img.logos-compony {
+    display: inline-block !important;
+    height: 30px !important;          /* Is se image ki height zabadasti fix ho jayegi */
+    width: auto !important;           /* Width khud hi height ke mutabiq choti ho jayegi */
+    max-height: 30px !important;      /* Kisi bhi haal mein height 30px se upar nahi jayegi */
+    max-width: 120px !important;      /* Width ko bhi limit lagadi taake lamba na ho */
+    object-fit: contain !important;   /* Logo kichay ga ya kharab nahi hoga */
+    box-sizing: border-box !important;
+    padding: 0 !important;            /* Faltu padding khatam */
+    margin: 0 !important;             /* Faltu margin khatam */
+    margin-right: auto !important;    /* Logo left par rahega, baaki content right par */
+}
 
 
 
