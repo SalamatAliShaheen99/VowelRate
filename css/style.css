@@ -79,13 +79,16 @@ header{
     margin-left: 0; /* Fix: Faltu negative margins ko hataya */
     margin-right: 0; /* Fix: Jis se right side ka gap khatam ho jayega */
 }
-.logos-compony {
-    height: auto;          /* Image ki original ratio kharab nahi hogi */
-    max-height: 40px;      /* Banner se thoda chota rakhne ke liye height control */
-    width: auto;           /* Width automatically adjust ho jayegi */
-    object-fit: contain;   /* Logo stretch ya kharab nahi hoga */
-    margin-right: auto;    /* Fix: Logo ko left side par push karega aur baaki content right par rahega */
+/* Purane system ko override karke logo ko zabardasti chota karne ke liye */
+img.logos-compony {
+    width: auto !important;          /* Global full-width ko khatam karega */
+    max-width: 150px !important;     /* Logo ki width ko zabardasti control karega */
+    height: 35px !important;         /* Banner ke padding ke mutabiq zabardasti chota karega */
+    object-fit: contain !important;  /* Logo ka shape kharab nahi hone dega */
+    display: block !important;       /* Alignment ko perfect rakhne ke liye */
+    margin-right: auto;              /* Logo ko left side par rakhega */
 }
+
 
 
 /* ==========================================
