@@ -17,7 +17,6 @@ body{
 .brand-image {
     width: 100px;
     padding: 5px,10px;
-    height: 80px;
     object-fit: contain; /* Picture ko kharab ya stretch hone se rokega */
 }
 
