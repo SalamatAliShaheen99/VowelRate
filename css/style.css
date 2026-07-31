@@ -5,7 +5,7 @@ body{
 }
 .vowelrate-brand-header {
     width: 100%;
-    padding: 3px 6px;
+    padding: 5px 12px;
     background: transparent; /* Taake aapka apna dark blue background niche se dikhta rahe */
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body{
 }
 
 .brand-image {
-    width: 100px;
+    width: 100%;
     padding: 5px,10px;
     object-fit: contain; /* Picture ko kharab ya stretch hone se rokega */
 }
@@ -119,8 +119,8 @@ header{
     color: rgb(226, 223, 18);
 }
 .logo{
-  height: 60px;
-  width: 50px;
+  height: 10px;
+  width: 5px;
   position: relative;
   left: 3px;
   display: block;
