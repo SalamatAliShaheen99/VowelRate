@@ -79,6 +79,14 @@ header{
     margin-left: 0; /* Fix: Faltu negative margins ko hataya */
     margin-right: 0; /* Fix: Jis se right side ka gap khatam ho jayega */
 }
+.logos-compony {
+    height: auto;          /* Image ki original ratio kharab nahi hogi */
+    max-height: 40px;      /* Banner se thoda chota rakhne ke liye height control */
+    width: auto;           /* Width automatically adjust ho jayegi */
+    object-fit: contain;   /* Logo stretch ya kharab nahi hoga */
+    margin-right: auto;    /* Fix: Logo ko left side par push karega aur baaki content right par rahega */
+}
+
 
 /* ==========================================
    3. SECOND PORTION (MAIN NAV BAR WINDOW FIT FIX)
@@ -96,6 +104,7 @@ header{
     margin-left: 0; /* Fix: Margins clear kiye perfectly fit karne ke liye */
     margin-right: 0;
 }
+
 
 /* Mouse le jane par */
 .banner a:hover {
