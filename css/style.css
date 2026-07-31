@@ -66,7 +66,7 @@ header{
 .banner {
     position: static;
     max-width: 100%; /* Fix: 1310px se hatakar 100% kiya taake screen par fit ho */
-    padding: 5px 10px;
+    padding: 10px 20px;
     display: flex; /* Inline-flex ki jagah flex kiya */
     justify-content: flex-end; 
     align-items: center;
