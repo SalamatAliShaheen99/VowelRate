@@ -2041,3 +2041,22 @@ img {
   object-fit: cover !important;
   object-position: center !important;
 }
+
+
+.article1{
+    background-color: transparent;
+
+}
+.article1 h1{
+    color: white;
+}
+.article1 h2{
+    color: white;
+
+}
+.article1 h3{
+    color: white;
+}
+.article1 p{
+    color: white;
+}
