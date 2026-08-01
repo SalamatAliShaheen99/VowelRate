@@ -2042,21 +2042,89 @@ img {
   object-position: center !important;
 }
 
+/*yahain se nicha article wali page ka liya hain 
 
-.article1{
-    background-color: transparent;
 
-}
-.article1 h1{
-    color: white;
-}
-.article1 h2{
-    color: white;
 
+/* Container Box jo contents ko flexbox (side-by-side) banata hai */
+.naf-review-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
 }
-.article1 h3{
-    color: white;
+
+/* Left side content settings */
+.naf-content-col {
+    flex: 1 1 500px;
 }
-.article1 p{
-    color: white;
+
+/* Right side image column settings */
+.naf-image-col {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+/* Responsive Image styling */
+.naf-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Typography Classes (Sarf is section par apply hongi) */
+.naf-main-title {
+    font-size: 28px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.naf-sub-title {
+    font-size: 20px;
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.naf-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+}
+
+.naf-list {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #444444;
+}
+
+.naf-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Link Button Styling */
+.naf-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.naf-btn:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
