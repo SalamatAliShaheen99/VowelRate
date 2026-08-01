@@ -2046,18 +2046,22 @@ img {
 
 
 
-/* Container Box jo contents ko flexbox (side-by-side) banata hai */
+/* Container Box: Dark Blue Background par premium glow aur glass effect dega */
 .naf-review-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    font-family: Arial, sans-serif;
+    gap: 40px;
+    padding: 35px;
+    margin: 30px 0;
+    /* Glassmorphism Effect: Dark Blue background ke upar khubsoorat translucent look */
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Left side content settings */
@@ -2067,64 +2071,97 @@ img {
 
 /* Right side image column settings */
 .naf-image-col {
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Responsive Image styling */
+/* Responsive Image styling with modern neon-glow */
 .naf-img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    /* Soft white glow jo dark blue background par photo ko pop-out karega */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Typography Classes (Sarf is section par apply hongi) */
+/* Hover par image thodi upar uthegi (Premium Feel) */
+.naf-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+}
+
+/* Typography Classes (Dark Mode optimized) */
 .naf-main-title {
-    font-size: 28px;
-    color: #111111;
-    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; /* Bilkul saaf white title */
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
 }
 
 .naf-sub-title {
-    font-size: 20px;
-    color: #222222;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #cbd5e1; /* Light grey-blue shade jo ankhon ko na chube */
+    margin-top: 25px;
+    margin-bottom: 12px;
 }
 
 .naf-text {
     font-size: 16px;
-    line-height: 1.6;
-    color: #444444;
+    line-height: 1.7;
+    color: #94a3b8; /* Premium slate color read karne mein aasan hota hai */
 }
 
 .naf-list {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-left: 20px;
-    color: #444444;
+    list-style-type: none; /* Default bullets hata kar customized gap diya hai */
 }
 
 .naf-list li {
-    margin-bottom: 8px;
+    position: relative;
+    margin-bottom: 12px;
     font-size: 15px;
+    color: #94a3b8;
+    line-height: 1.5;
 }
 
-/* Link Button Styling */
+/* Premium Neon Button Styling */
 .naf-btn {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #111111;
-    color: #ffffff;
+    padding: 14px 28px;
+    background-color: #ffffff; /* White button dark blue background par best lagta hai */
+    color: #0f172a; /* Button ke andar dark text */
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Button Hover Effect */
 .naf-btn:hover {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #e2e8f0;
+    color: #0f172a;
+    transform: scale(1.02); /* Smooth click animation */
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+    .naf-review-container {
+        padding: 20px;
+        gap: 25px;
+    }
+    .naf-main-title {
+        font-size: 26px;
+    }
 }
