@@ -1752,7 +1752,7 @@ const productsData = {
         oldPrice: "$150.00",
         currentPrice: "$150.00",
         amazonLink: "https://amzn.to/4vI1j8E",
-        marketVerifyLink: "https://stockx.com",
+        marketVerifyLink: "https://amzn.to/4vI1j8E",
 
         comfort: 8, 
         breathability: 6, 
