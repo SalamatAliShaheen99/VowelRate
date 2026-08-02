@@ -147,3 +147,20 @@ const luxForm = document.getElementById("luxury-newsletter-form");
         luxBtn.disabled = false;
         luxBtn.innerHTML = `<span>Subscribe</span><svg xmlns="http://w3.org" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12,5 19,12 12,19"></polyline></svg>`;
     }
+
+// ya agree trrm and conditon ka agree wla popups ka system hain
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("termsBanner");
+  const acceptBtn = document.getElementById("acceptTermsBtn");
+
+  // Check karein ke kya user pehle agree kar chuka hai
+  if (localStorage.getItem("userAgreedToTerms") === "true") {
+    banner.classList.add("hide-banner");
+  }
+
+  // Jab user button par click kare
+  acceptBtn.addEventListener("click", function () {
+    localStorage.setItem("userAgreedToTerms", "true"); // Browser memory mein save karein
+    banner.classList.add("hide-banner"); // Banner ko chupa dein
+  });
+});
