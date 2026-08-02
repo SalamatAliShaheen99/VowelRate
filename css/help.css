@@ -706,3 +706,127 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e29
     .leader-card .img-box { width: 100%; height: 220px; }
     .team-grid { grid-template-columns: 1fr; }
 }
+/* ==========================================================================
+   FOUNDER, CHAIRMAN, & CEO CARDS ALIGNMENT SETUP
+   ========================================================================== */
+
+/* Teeno main headers ko page ke center mein horizontal lane ke liye */
+.leader-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 35px; /* Cards ke darmiyan professional gap */
+}
+
+/* Base structural look for Founder, Chairman and CEO profiles */
+.leader-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    max-width: 850px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover style for dynamic user impression */
+.leader-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* Big Image layout adjustment for Top Headers */
+.leader-card .img-box {
+    width: 220px;
+    height: 250px;
+    flex-shrink: 0;
+    background-color: #f1f5f9; /* Image load na hone par placeholder grid */
+}
+
+.leader-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Inner Text block padding for clear semantic scanning */
+.leader-details {
+    padding: 30px 40px;
+    flex-grow: 1;
+}
+
+.leader-details h2 {
+    color: #0f172a;
+    font-size: 1.65rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+}
+
+.leader-details h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.leader-details p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   SPECIFIC BRAND CUSTOMIZATIONS (ROLES SEPARATION)
+   ========================================================================== */
+
+/* 🥇 1. FOUNDER CARD (Aap Ke Walid Sahib) - Premium Gold Highlights */
+.golden-border {
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #d4af37; /* Solid gold border accent */
+}
+.golden-border h3 {
+    color: #d4af37;
+}
+
+/* 🥈 2. CHAIRMAN CARD (Salamat Ali Shaheen) - Enterprise Royal Blue Highlights */
+.blue-border {
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #2563eb; /* Corporate identity accent */
+    background: linear-gradient(to right, #ffffff 90%, #f8fafc 100%);
+}
+.blue-border h3 {
+    color: #2563eb;
+}
+
+/* 🥉 3. CEO CARD (Chief Executive Officer) - Executive Steel Slate Highlights */
+.standard-border {
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #64748b; /* Professional system accent */
+}
+.standard-border h3 {
+    color: #64748b;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT FOR MOBILE AND TABLETS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .leader-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .leader-card .img-box {
+        width: 100%;
+        height: 240px;
+    }
+    
+    .leader-details {
+        padding: 25px 20px;
+    }
+}
