@@ -649,130 +649,7 @@ body{
         font-size: 26px;
     }
 }
-/* ==========================================================================
-   FOUNDER, CHAIRMAN, & CEO CARDS ALIGNMENT SETUP
-   ========================================================================== */
 
-/* Teeno main headers ko page ke center mein horizontal lane ke liye */
-.leader-row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 35px; /* Cards ke darmiyan professional gap */
-}
-
-/* Base structural look for Founder, Chairman and CEO profiles */
-.leader-card {
-    display: flex;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
-    max-width: 850px;
-    width: 100%;
-    overflow: hidden;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover style for dynamic user impression */
-.leader-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
-}
-
-/* Big Image layout adjustment for Top Headers */
-.leader-card .img-box {
-    width: 220px;
-    height: 250px;
-    flex-shrink: 0;
-    background-color: #f1f5f9; /* Image load na hone par placeholder grid */
-}
-
-.leader-card .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Inner Text block padding for clear semantic scanning */
-.leader-details {
-    padding: 30px 40px;
-    flex-grow: 1;
-}
-
-.leader-details h2 {
-    color: #0f172a;
-    font-size: 1.65rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-    letter-spacing: -0.02em;
-}
-
-.leader-details h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
-}
-
-.leader-details p {
-    font-size: 0.95rem;
-    color: #475569;
-    line-height: 1.6;
-}
-
-/* ==========================================================================
-   SPECIFIC BRAND CUSTOMIZATIONS (ROLES SEPARATION)
-   ========================================================================== */
-
-/* 🥇 1. FOUNDER CARD (Aap Ke Walid Sahib) - Premium Gold Highlights */
-.golden-border {
-    border: 1px solid #e2e8f0;
-    border-left: 6px solid #d4af37; /* Solid gold border accent */
-}
-.golden-border h3 {
-    color: #d4af37;
-}
-
-/* 🥈 2. CHAIRMAN CARD (Salamat Ali Shaheen) - Enterprise Royal Blue Highlights */
-.blue-border {
-    border: 1px solid #e2e8f0;
-    border-left: 6px solid #2563eb; /* Corporate identity accent */
-    background: linear-gradient(to right, #ffffff 90%, #f8fafc 100%);
-}
-.blue-border h3 {
-    color: #2563eb;
-}
-
-/* 🥉 3. CEO CARD (Chief Executive Officer) - Executive Steel Slate Highlights */
-.standard-border {
-    border: 1px solid #e2e8f0;
-    border-left: 6px solid #64748b; /* Professional system accent */
-}
-.standard-border h3 {
-    color: #64748b;
-}
-
-/* ==========================================================================
-   RESPONSIVE LAYOUT FOR MOBILE AND TABLETS
-   ========================================================================== */
-@media (max-width: 768px) {
-    .leader-card {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .leader-card .img-box {
-        width: 100%;
-        height: 240px;
-    }
-    
-    .leader-details {
-        padding: 25px 20px;
-    }
-}
 
 @import url('https://googleapis.com');
 
@@ -781,52 +658,51 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e29
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
 /* Hero */
-.about-hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; text-align: center; padding: 70px 0; }
-.about-hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 12px; }
-.about-hero p { font-size: 1.1rem; color: #94a3b8; max-width: 650px; margin: 0 auto; }
+.about-hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; text-align: center; padding: 60px 0; }
+.about-hero h1 { font-size: 2.3rem; font-weight: 700; margin-bottom: 10px; }
+.about-hero p { font-size: 1.05rem; color: #94a3b8; max-width: 650px; margin: 0 auto; }
 
-/* Sections */
-.team-section { padding: 50px 0; }
-.section-divider { width: 100%; max-width: 850px; margin: 40px auto 20px auto; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
-.section-divider h3 { color: #475569; font-size: 1.3rem; font-weight: 600; text-align: left; }
+/* Main Section Layout */
+.team-section { padding: 40px 0; }
+.section-divider { width: 100%; max-width: 950px; margin: 40px auto 20px auto; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+.section-divider h3 { color: #475569; font-size: 1.25rem; font-weight: 600; }
 
-/* Big Leadership Rows */
+/* Chairman Center Alignment */
 .leader-row { display: flex; justify-content: center; margin-bottom: 30px; }
-.leader-card { display: flex; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); max-width: 850px; width: 100%; overflow: hidden; align-items: center; }
-.leader-card .img-box { width: 220px; height: 250px; flex-shrink: 0; }
+.leader-card { display: flex; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); max-width: 950px; width: 100%; overflow: hidden; align-items: center; }
+.leader-card .img-box { width: 200px; height: 240px; flex-shrink: 0; }
 .leader-card .img-box img { width: 100%; height: 100%; object-fit: cover; }
 .leader-details { padding: 30px; }
 .leader-details h2 { color: #0f172a; font-size: 1.6rem; }
-.leader-details h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
-.leader-details p { font-size: 0.95rem; color: #475569; }
+.leader-details h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 10px; }
+.blue-border { border: 1px solid #e2e8f0; border-left: 6px solid #2563eb; } .blue-border h3 { color: #2563eb; }
 
-/* Boarders */
-.golden-border { border-left: 6px solid #d4af37; } .golden-border h3 { color: #d4af37; }
-.blue-border { border-left: 6px solid #2563eb; } .blue-border h3 { color: #2563eb; }
-.standard-border { border-left: 6px solid #64748b; } .standard-border h3 { color: #64748b; }
-
-/* Grid Members */
-.team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; max-width: 850px; margin: 0 auto 30px auto; }
-.team-card { background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); overflow: hidden; border: 1px solid #e2e8f0; }
-.img-box-grid { height: 220px; width: 100%; }
+/* 3 Column Team Grid Settings */
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 950px; margin: 0 auto; }
+.team-card { background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); overflow: hidden; border: 1px solid #e2e8f0; transition: transform 0.2s; }
+.team-card:hover { transform: translateY(-3px); }
+.img-box-grid { height: 200px; width: 100%; background-color: #f1f5f9; }
 .img-box-grid img { width: 100%; height: 100%; object-fit: cover; }
-.card-info { padding: 20px; text-align: center; }
-.card-info h4 { color: #0f172a; font-size: 1.15rem; }
-.card-info h5 { color: #2563eb; font-size: 0.95rem; margin-bottom: 8px; }
-.card-info p { font-size: 0.88rem; color: #64748b; }
+.card-info { padding: 15px; text-align: center; }
+.card-info h4 { color: #0f172a; font-size: 1.1rem; font-weight: 600; }
+.card-info h5 { color: #2563eb; font-size: 0.9rem; margin-bottom: 6px; }
+.card-info p { font-size: 0.85rem; color: #64748b; line-height: 1.5; }
 
-/* Icons */
-.social-links a { color: #64748b; margin-right: 12px; font-size: 1.1rem; }
+/* Social Icons */
+.social-links a { color: #64748b; margin-right: 12px; font-size: 1.1rem; text-decoration: none; }
 .social-links a:hover { color: #2563eb; }
 
-/* Footer */
-.main-footer { background-color: #0f172a; color: #ffffff; padding: 35px 0; text-align: center; margin-top: 50px; }
-.footer-container { display: flex; flex-direction: column; gap: 12px; }
-.legal-disclosure { font-size: 11px; color: #94a3b8; max-width: 850px; line-height: 1.5; border-top: 1px solid #334155; padding-top: 12px; text-align: justify; }
+/* Legal Footer */
+.main-footer { background-color: #0f172a; color: #ffffff; padding: 30px 0; text-align: center; margin-top: 50px; }
+.footer-container { display: flex; flex-direction: column; gap: 10px; }
+.legal-disclosure { font-size: 11px; color: #94a3b8; max-width: 950px; line-height: 1.5; border-top: 1px solid #334155; padding-top: 10px; text-align: center; }
 
-@media (max-width: 768px) {
+/* Tablet & Mobile Breakpoints */
+@media (max-width: 900px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
     .leader-card { flex-direction: column; text-align: center; }
-    .leader-card .img-box { width: 100%; height: 220px; }
+    .leader-card .img-box { width: 100%; height: 200px; }
     .team-grid { grid-template-columns: 1fr; }
 }
-
