@@ -1500,14 +1500,7 @@ div.shoe-card {
         font-size: 26px;
     }
 }
-/*yahain pa article wali page ki date wala container ka style hoga */
-.date-of-article{
-    color:greenyellow;
-}
-.date-of-article h5{
-    color: greenyellow;
-    
-}
+
 /* --- AMAZON STYLE BACK TO TOP BUTTON --- */
 .back-to-top {
     display: block;
