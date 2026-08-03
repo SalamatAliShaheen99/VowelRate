@@ -706,3 +706,20 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e29
     .leader-card .img-box { width: 100%; height: 200px; }
     .team-grid { grid-template-columns: 1fr; }
 }
+
+
+.article-about{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.artcle-about-heading{
+    color: white;
+
+}
+.article-about h4{
+    color: white;
+}
+.article-about{
+    color: white;
+}
